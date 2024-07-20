@@ -34,8 +34,8 @@ const Contact = () => {
         <p>
           Ready to elevate your business? <br />
           <br />
-          We're here to help! Reach out today to discuss how we can make your
-          online presence shine. We're excited to hear your ideas and achieve
+          We are here to help! Reach out today to discuss how we can make your
+          online presence shine. We are excited to hear your ideas and achieve
           your goals together!
         </p>
         <div className="form-container">
