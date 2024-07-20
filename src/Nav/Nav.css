@@ -43,13 +43,12 @@
 }
 
 .logo {
-  width: 35%;
+  width: 28%;
   height: auto;
 }
 
 #hamburger-nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
   position: relative;
 }
