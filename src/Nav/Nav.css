@@ -1,4 +1,18 @@
+.menu-links {
+  display: none; /* Hide by default */
+}
+
+.menu-links.open {
+  display: block; /* Show when open */
+}
+
 .logo {
-  width: auto;
-  height: 150%;
+  width: 35%;
+  height: auto;
+}
+
+#hamburger-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
