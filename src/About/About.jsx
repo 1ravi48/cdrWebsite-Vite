@@ -1,10 +1,10 @@
-import "./About.css";
+import styles from "./About.module.css";
 
 const About = () => {
   return (
     <section id="about">
       <h2>About Us</h2>
-      <div className="card">
+      <div className={styles.card}>
         <p>
           Our journey as CDR Devs started with a shared dream: to use our coding
           skills to have a positive impact on the world 🔥.

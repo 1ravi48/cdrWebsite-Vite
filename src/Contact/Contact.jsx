@@ -1,4 +1,4 @@
-import "./Contact.css";
+import styles from "./Contact.module.css";
 import { useState } from "react";
 import nameIcon from "../assets/images/name-icon.svg";
 import emailIcon from "../assets/images/email-icon.svg";
@@ -38,9 +38,9 @@ const Contact = () => {
           online presence shine. We are excited to hear your ideas and achieve
           your goals together!
         </p>
-        <div className="form-container">
+        <div className={styles.formContainer}>
           <form onSubmit={handleSubmit}>
-            <div className="input-group">
+            <div className={styles.inputGroup}>
               <input
                 type="text"
                 id="name"
