@@ -50,11 +50,15 @@ const Contact = () => {
                 required
               />
               <label htmlFor="name">
-                <img className="form-icon" src={nameIcon} alt="name-icon" />{" "}
+                <img
+                  className={styles.formIcon}
+                  src={nameIcon}
+                  alt="name-icon"
+                />{" "}
                 Name:
               </label>
             </div>
-            <div className="input-group">
+            <div className={styles.inputGroup}>
               <input
                 type="email"
                 id="email"
@@ -64,11 +68,15 @@ const Contact = () => {
                 required
               />
               <label htmlFor="email">
-                <img className="form-icon" src={emailIcon} alt="email-icon" />{" "}
+                <img
+                  className={styles.formIcon}
+                  src={emailIcon}
+                  alt="email-icon"
+                />{" "}
                 Email:
               </label>
             </div>
-            <div className="input-group">
+            <div className={styles.inputGroup}>
               <textarea
                 id="message"
                 name="message"
@@ -78,7 +86,7 @@ const Contact = () => {
               />
               <label htmlFor="message">
                 <img
-                  className="form-icon"
+                  className={styles.formIcon}
                   src={messageIcon}
                   alt="message-icon"
                 />{" "}
@@ -87,14 +95,18 @@ const Contact = () => {
             </div>
             <button type="submit">
               SUBMIT{" "}
-              <img className="form-icon" src={sendIcon} alt="send-icon" />
+              <img className={styles.formIcon} src={sendIcon} alt="send-icon" />
             </button>
           </form>
         </div>
-        <p className="contact-footer">
+        <p className={styles.contactFooter}>
           Alternatively, reach out on{" "}
           <a href="https://www.fiverr.com">
-            <img className="fiverr-icon" src={fiverrIcon} alt="fiverr-icon" />
+            <img
+              className={styles.fiverrIcon}
+              src={fiverrIcon}
+              alt="fiverr-icon"
+            />
           </a>
         </p>
       </section>
