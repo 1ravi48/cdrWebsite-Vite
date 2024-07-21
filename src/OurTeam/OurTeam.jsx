@@ -1,20 +1,31 @@
 import "./OurTeam.css";
+import catherineImage from "../assets/images/workstation.png";
 
 const OurTeam = () => {
   return (
     <section id="our-team">
       <h2>Meet our team</h2>
-      <div className="card">
-        <div className="profile-circle">
-          <img src="images/catherine-small.png" alt="Catherine" />
+      <div className="our-team-container">
+        <div className="swiper">
+          <div className="swiper-wrapper">
+            <div className="card">
+              <div className="card-image">
+                <img src={catherineImage} alt="catherine's image" />
+              </div>
+              <div className="card-content">
+                <span className="card-title">Full Stack Web Developer</span>
+                <span className="card-name">Catherine Sarquís</span>
+                <p className="card-text">
+                  Catherine is transitioning into software development, driven
+                  by her passion for detail and problem-solving.
+                  Catherine&apos;s experience in proofreading, digital editing
+                  and love of languages bring a unique perspective to her work.
+                </p>
+                <button className="card-btn">View More</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3>Catherine</h3>
-        <p>
-          Catherine is transitioning into software development, driven by her
-          passion for detail and problem-solving. Catherine&apos;s experience in
-          proofreading, digital editing and love of languages bring a unique
-          perspective to her work.
-        </p>
       </div>
 
       <div className="card">
