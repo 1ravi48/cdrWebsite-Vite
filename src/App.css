@@ -42,6 +42,10 @@ p {
   font-weight: 300;
 }
 
+div p:not(:last-child) {
+  margin-bottom: 1em;
+}
+
 .purple-grad {
   background: var(--purple-gradient);
   background-clip: text;
