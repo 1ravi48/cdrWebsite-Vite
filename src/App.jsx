@@ -1,6 +1,6 @@
 import "./App.css";
 import Nav from "./Nav/Nav";
-import Home from "./Home/Home";
+import Hero from "./Hero/Hero";
 import About from "./About/About";
 import OurStory from "./OurStory/OurStory";
 import OurTeam from "./OurTeam/OurTeam";
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Nav />
-      <Home />
+      <Hero />
       <About />
       <OurStory />
       <OurTeam />
