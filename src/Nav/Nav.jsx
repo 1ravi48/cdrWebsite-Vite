@@ -1,4 +1,4 @@
-import "./Nav.css";
+import styles from "./Nav.module.css";
 import { useState } from "react";
 import logo from "../assets/images/logo.svg";
 import Hamburger from "hamburger-react";
@@ -8,12 +8,12 @@ const Nav = () => {
 
   return (
     <>
-      <nav id="hamburger-nav">
+      <nav id={styles.hamburgerNav}>
         <a href="#home">
-          <img className="logo" src={logo} alt="CDR Devs" />
+          <img className={styles.logo} src={logo} alt="CDR Devs" />
         </a>
 
-        <div className="hamburger-menu">
+        <div className={styles.hamburgerMenu}>
           <Hamburger
             rounded
             color="#433D8B"
@@ -22,7 +22,7 @@ const Nav = () => {
             toggle={setOpen}
             aria-label="Toggle menu"
           />
-          <div className={`menu-links ${isOpen ? "open" : ""}`}>
+          <div className={`menuLinks ${isOpen ? "open" : ""}`}>
             <ul>
               <li>
                 <a href="#about">About</a>

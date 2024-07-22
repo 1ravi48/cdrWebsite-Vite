@@ -1,4 +1,4 @@
-.menu-links {
+.menuLinks {
   display: none;
   background-color: aliceblue;
   position: absolute;
@@ -15,19 +15,19 @@
   display: block;
 }
 
-.menu-links ul {
+.menuLinks ul {
   list-style: none;
 }
 
-.menu-links li {
+.menuLinks li {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.menu-links li:last-child {
+.menuLinks li:last-child {
   border-bottom: none;
 }
 
-.menu-links a {
+.menuLinks a {
   display: block;
   padding: 12px 20px;
   text-align: center;
@@ -37,7 +37,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.menu-links a:hover {
+.menuLinks a:hover {
   background-color: #433d8b;
   color: #fff;
 }
@@ -47,7 +47,7 @@
   height: 120%;
 }
 
-#hamburger-nav {
+#hamburgerNav {
   display: flex;
   justify-content: space-between;
   position: relative;
