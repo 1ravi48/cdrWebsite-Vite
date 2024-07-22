@@ -22,7 +22,7 @@ const Nav = () => {
             toggle={setOpen}
             aria-label="Toggle menu"
           />
-          <div className={`menuLinks ${isOpen ? "open" : ""}`}>
+          <div className={`${styles.menuLinks} ${isOpen ? styles.open : ""}`}>
             <ul>
               <li>
                 <a href="#about">About</a>
