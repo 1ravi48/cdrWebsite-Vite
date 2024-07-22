@@ -117,7 +117,7 @@ const OurTeam = () => {
         <Swiper
           pagination={{ clickable: true }}
           modules={[Pagination]}
-          className={styles.teamSlider}
+          className={`${styles.teamSlider} ${styles.swiperContainerHeight}`}
         >
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>

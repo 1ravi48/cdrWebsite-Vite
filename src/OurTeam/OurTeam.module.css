@@ -18,6 +18,10 @@
   gap: 1.5em;
 }
 
+.swiperContainerHeight {
+  height: 40em;
+}
+
 /* .teamMemberCard {
   display: flex;
   align-items: center;
