@@ -1,13 +1,23 @@
-.teamMemberCard {
+.teamMemberCardContainer {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+
+.teamMemberCard {
   padding: 2em 1em;
   background-color: white;
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
   border-radius: 2em;
   width: 20em;
-  height: 33.5em;
+  height: 36.3em;
+}
+
+.teamMemberImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .teamMemberImage {
@@ -19,7 +29,7 @@
   height: 10em;
 }
 
-.teamMemberImage img {
+img {
   border-radius: 50%;
   object-fit: cover;
   width: 100%;

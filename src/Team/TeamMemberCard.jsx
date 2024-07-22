@@ -4,15 +4,17 @@ import styles from "./TeamMemberCard.module.css";
 const TeamMemberCard = ({ image, name, title, description }) => {
   return (
     <>
-      <div className={styles.teamMemberCard}>
-        <div className={styles.teamMemberImage}>
-          <img src={image} alt={name} />
-        </div>
-        <div className={styles.teamMemberContent}>
-          <span className={styles.teamMemberTitle}>{title}</span>
-          <h3 className={styles.teamMemberName}>{name}</h3>
-          <p className={styles.teamMemberDescription}>{description}</p>
-          <button className={styles.readMoreBtn}>View More</button>
+      <div className={styles.teamMemberCardContainer}>
+        <div className={styles.teamMemberCard}>
+          <div className={styles.teamMemberImageWrapper}>
+            <img src={image} alt={name} className={styles.teamMemberImage} />
+          </div>
+          <div className={styles.teamMemberContent}>
+            <span className={styles.teamMemberTitle}>{title}</span>
+            <h3 className={styles.teamMemberName}>{name}</h3>
+            <p className={styles.teamMemberDescription}>{description}</p>
+            <button className={styles.readMoreBtn}>View More</button>
+          </div>
         </div>
       </div>
     </>
