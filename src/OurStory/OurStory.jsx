@@ -1,10 +1,10 @@
-import "./OurStory.css";
+import styles from "./OurStory.module.css";
 
 const OurStory = () => {
   return (
     <section id="our-story">
       <h2>Our Story</h2>
-      <div className="card">
+      <div className={styles.card}>
         <p>
           Coming from different backgrounds, we are a team of three software
           developers who have been through the same software development
@@ -13,17 +13,19 @@ const OurStory = () => {
           insight into all of the stages involved in the full-stack software
           development life cycle, including (but not limited to):
         </p>
-        <ul>
-          <li>Understanding the client&apos;s problem</li>
-          <li>Generating ideas</li>
-          <li>Conducting market research</li>
-          <li>Wireframing and prototyping</li>
-          <li>Building frontend user interfaces</li>
-          <li>Building backend servers</li>
-          <li>Managing databases</li>
-          <li>Testing for quality assurance</li>
-          <li>Deploying software</li>
-        </ul>
+        <div className={styles.experienceList}>
+          <ul>
+            <li>Understanding the problem</li>
+            <li>Generating ideas</li>
+            <li>Conducting research</li>
+            <li>Wireframing and prototyping</li>
+            <li>Building frontend UI/UX</li>
+            <li>Building backend servers</li>
+            <li>Managing databases</li>
+            <li>Testing for QA</li>
+            <li>Deploying software</li>
+          </ul>
+        </div>
         <p>
           Each of us worked in separate teams during the bootcamp, contributing
           to and learning from three very different projects (see the Projects
