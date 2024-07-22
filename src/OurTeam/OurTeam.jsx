@@ -114,21 +114,22 @@ const OurTeam = () => {
     <>
       <section id="our-team">
         <h2>Meet our team</h2>
-        <div className={styles.teamContainer}>
-          <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-            <SwiperSlide>
-              {teamMembers.map((member, index) => (
-                <TeamMemberCard
-                  key={index}
-                  image={member.image}
-                  name={member.name}
-                  title={member.title}
-                  description={member.description}
-                />
-              ))}
+        <Swiper
+          pagination={{ clickable: true }}
+          modules={[Pagination]}
+          className={styles.teamSlider}
+        >
+          {teamMembers.map((member, index) => (
+            <SwiperSlide key={index}>
+              <TeamMemberCard
+                image={member.image}
+                name={member.name}
+                title={member.title}
+                description={member.description}
+              />
             </SwiperSlide>
-          </Swiper>
-        </div>
+          ))}
+        </Swiper>
       </section>
     </>
   );
