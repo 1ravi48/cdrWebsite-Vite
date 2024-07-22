@@ -1,4 +1,4 @@
-import "./Hero.css";
+import styles from "./Hero.module.css";
 import heroImage from "/images/hero_image.svg";
 
 const Hero = () => {
@@ -24,7 +24,7 @@ const Hero = () => {
         viewBox="0 0 72 72"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="circle-decoration"
+        className={styles.circleDecoration}
       >
         <path
           d="M0 36 A36 36 0 0 1 72 36 Z"
