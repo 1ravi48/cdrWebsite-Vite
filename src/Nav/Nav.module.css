@@ -1,0 +1,29 @@
+.NavContainer {
+  width: 100vw;
+  display: flex;
+  height: 10vh;
+  padding-left: 8.4%;
+  padding-right: 8.4%;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.logo {
+  height: 75%;
+  margin-top: 19%;
+}
+
+.ListContainer {
+  display: none;
+}
+
+.HamburgerContainer {
+  margin-top: 10%;
+  height: 51.7%;
+  width: 15%;
+}
+
+.HamburgerIcon {
+  height: 100%;
+  width: 100%;
+}

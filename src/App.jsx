@@ -1,9 +1,10 @@
 import "./App.css";
+import Nav from "./Nav/Nav";
 
 function App() {
   return (
     <>
-      <h1>restart!</h1>
+      <Nav />
     </>
   );
 }
