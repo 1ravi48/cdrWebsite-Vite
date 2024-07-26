@@ -9,6 +9,12 @@ import React, { useState } from "react";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [homeHovering, setHomeHovering] = useState(false);
+  const [aboutHovering, setAboutHovering] = useState(false);
+  const [storyHovering, setStoryHovering] = useState(false);
+  const [teamHovering, setTeamHovering] = useState(false);
+  const [contactHovering, setContactHovering] = useState(false);
+
   return (
     <>
       <nav className={styles.NavContainer}>
@@ -34,25 +40,58 @@ export default function Nav() {
           )}
         </div>
         {isOpen && (
-          <div className={styles.ListContainer}>
-            <ul className={styles.MenuLinks}>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About Us</a>
-              </li>
-              <li>
-                <a href="#story">Our Story</a>
-              </li>
-              <li>
-                <a href="#team">Our Team</a>
-              </li>
-              <li>
-                <a href="#contact">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+          <ul className={styles.MenuLinks}>
+            <li className={styles.ListItem}>
+              <a
+                href="#home"
+                className={homeHovering ? styles.Hover : styles.NotHover}
+                onMouseEnter={() => setHomeHovering(true)}
+                onMouseLeave={() => setHomeHovering(false)}
+              >
+                Home
+              </a>
+            </li>
+            <li className={styles.ListItem}>
+              <a
+                href="#about"
+                className={aboutHovering ? styles.Hover : styles.NotHover}
+                onMouseEnter={() => setAboutHovering(true)}
+                onMouseLeave={() => setAboutHovering(false)}
+              >
+                About Us
+              </a>
+            </li>
+            <li className={styles.ListItem}>
+              <a
+                href="#story"
+                className={storyHovering ? styles.Hover : styles.NotHover}
+                onMouseEnter={() => setStoryHovering(true)}
+                onMouseLeave={() => setStoryHovering(false)}
+              >
+                Our Story
+              </a>
+            </li>
+            <li className={styles.ListItem}>
+              <a
+                href="#team"
+                className={teamHovering ? styles.Hover : styles.NotHover}
+                onMouseEnter={() => setTeamHovering(true)}
+                onMouseLeave={() => setTeamHovering(false)}
+              >
+                Our Team
+              </a>
+            </li>
+            <li className={styles.ListItem}>
+              <a
+                href="#contact"
+                className={contactHovering ? styles.Hover : styles.NotHover}
+                onMouseEnter={() => setContactHovering(true)}
+                onMouseLeave={() => setContactHovering(false)}
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
         )}
       </nav>
     </>

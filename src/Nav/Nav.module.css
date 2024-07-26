@@ -3,7 +3,7 @@
   height: 89px;
   padding-left: 8.4%;
   padding-right: 8.4%;
-  position: fixed;
+  position: sticky;
   /* border: solid; */
 }
 
@@ -26,4 +26,29 @@
 .HamburgerIcon {
   height: 100%;
   width: 100%;
+}
+
+.MenuLinks {
+  list-style-type: none;
+  /* border: solid; */
+  width: 25%;
+  position: absolute;
+  right: 0;
+  top: 87px;
+}
+
+.ListItem {
+  border: solid;
+  border-width: 1px;
+  text-align: center;
+}
+
+.NotHover {
+  text-decoration: none;
+  color: black;
+}
+
+.Hover {
+  text-decoration: none;
+  color: purple;
 }
