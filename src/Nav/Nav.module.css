@@ -1,26 +1,26 @@
 .NavContainer {
   width: 100vw;
-  display: flex;
-  height: 10vh;
+  height: 89px;
   padding-left: 8.4%;
   padding-right: 8.4%;
-  justify-content: space-between;
   position: fixed;
+  /* border: solid; */
 }
 
 .logo {
-  height: 75%;
-  margin-top: 19%;
-}
-
-.ListContainer {
-  display: none;
+  height: 63px;
+  /* border: solid; */
+  position: absolute;
+  top: 22px;
 }
 
 .HamburgerContainer {
-  margin-top: 10%;
-  height: 51.7%;
-  width: 15%;
+  width: 40px;
+  height: auto;
+  /* border: solid; */
+  position: absolute;
+  right: 8.4%;
+  top: 35px;
 }
 
 .HamburgerIcon {
