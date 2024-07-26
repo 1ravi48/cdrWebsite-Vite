@@ -1,6 +1,8 @@
 import styles from "./Nav.module.css";
 import logo from "../assets/images/logo.svg";
-import hamburgericon from "../assets/icons/hamburger1.svg";
+import hamburgerIcon from "../assets/icons/hamburger.svg";
+import hamburgerCross from "../assets/icons/hamburger-cross.svg";
+
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 /* eslint-disable no-unused-vars */
@@ -17,11 +19,19 @@ export default function Nav() {
           className={styles.HamburgerContainer}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <img
-            className={styles.HamburgerIcon}
-            src={hamburgericon}
-            alt="hamburger-icon1"
-          />
+          {isOpen ? (
+            <img
+              className={styles.HamburgerIcon}
+              src={hamburgerCross}
+              alt="hamburger-icon"
+            />
+          ) : (
+            <img
+              className={styles.HamburgerIcon}
+              src={hamburgerIcon}
+              alt="hamburger-icon"
+            />
+          )}
         </div>
         {isOpen && (
           <div className={styles.ListContainer}>
