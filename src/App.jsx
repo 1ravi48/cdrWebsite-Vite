@@ -12,6 +12,12 @@ function App() {
         voluptate! Esse voluptas debitis perferendis odit velit earum eligendi
         quam tempora?
       </p>
+      <p className={styles.para350}>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea quas
+        placeat tempore? Dolores dolore natus veritatis in? Aspernatur,
+        voluptate! Esse voluptas debitis perferendis odit velit earum eligendi
+        quam tempora?
+      </p>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea quas
         placeat tempore? Dolores dolore natus veritatis in? Aspernatur,
