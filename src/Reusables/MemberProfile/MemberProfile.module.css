@@ -18,7 +18,7 @@
   border-radius: 1.5rem;
   width: 70%;
   height: 53rem;
-  background-color: aqua;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .teamMemberImage {
@@ -45,4 +45,22 @@
 .teamMemberDescription {
   text-align: center;
   padding: 0rem 2.5rem;
+}
+
+.SocialsContainer {
+  display: flex;
+  width: 75%;
+  padding: 0rem 2.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.teamMemberSocialIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.github-icon path {
+  fill: aquamarine;
 }
