@@ -1,4 +1,4 @@
-import styles from "./App.module.css";
+import "./App.css";
 
 import Nav from "./Nav/Nav";
 
@@ -6,24 +6,27 @@ function App() {
   return (
     <>
       <Nav />
-      <p className={styles.para}>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea quas
-        placeat tempore? Dolores dolore natus veritatis in? Aspernatur,
-        voluptate! Esse voluptas debitis perferendis odit velit earum eligendi
-        quam tempora?
-      </p>
-      <p className={styles.para350}>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea quas
-        placeat tempore? Dolores dolore natus veritatis in? Aspernatur,
-        voluptate! Esse voluptas debitis perferendis odit velit earum eligendi
-        quam tempora?
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure ea quas
-        placeat tempore? Dolores dolore natus veritatis in? Aspernatur,
-        voluptate! Esse voluptas debitis perferendis odit velit earum eligendi
-        quam tempora?
-      </p>
+      <div>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+          officiis. Magni, quidem ipsum? Quisquam, labore? Quis odit possimus
+          maiores. Porro distinctio magnam praesentium ullam natus a
+          voluptatibus, facilis similique! Amet?
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+          officiis. Magni, quidem ipsum? Quisquam, labore? Quis odit possimus
+          maiores. Porro distinctio magnam praesentium ullam natus a
+          voluptatibus, facilis similique! Amet?
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+          officiis. Magni, quidem ipsum? Quisquam, labore? Quis odit possimus
+          maiores. Porro distinctio magnam praesentium ullam natus a
+          voluptatibus, facilis similique! Amet?
+        </p>
+      </div>
+      <h1>heading</h1>
     </>
   );
 }
