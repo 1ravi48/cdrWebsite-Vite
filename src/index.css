@@ -66,7 +66,7 @@ p {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 162%;
-  color: #2D3748;
+  color: var(--mediumGrey);
   margin-bottom: 2.7rem;
 }
 
@@ -85,4 +85,10 @@ div p:last-child {
 
 :root {
   font-size: 62.5%;
+  --mediumGrey: #2d3748; /* paragraphs */
+  --darkGrey: #1a202c; /* titles */
+  --gradient: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+  --purple: #57007b; /* purple buttons */
+  --lightBlueGrey: #f9f9ff; /* backgrounds */
+  --navy: #3c417c; /* hamburger and titles */
 }

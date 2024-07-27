@@ -1,11 +1,13 @@
 import "./App.css";
 
 import Nav from "./Nav/Nav";
+import SectionTitle from "./Reusables/SectionTitle/SectionTitle";
 
 function App() {
   return (
     <>
       <Nav />
+      <SectionTitle title="About Us" />
       <div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
