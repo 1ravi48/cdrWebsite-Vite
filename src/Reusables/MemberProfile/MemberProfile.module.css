@@ -1,0 +1,48 @@
+.teamMemberCardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.teamMemberContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamMemberCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  width: 70%;
+  height: 53rem;
+  background-color: aqua;
+}
+
+.teamMemberImage {
+  border: solid 0.5rem var(--purple);
+  padding: 0.3rem;
+  height: 15.5rem;
+  width: 15.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.teamMemberName {
+  color: var(--darkGrey);
+  font-size: 2rem;
+}
+
+.teamMemberTitle {
+  color: var(--purple);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.teamMemberDescription {
+  text-align: center;
+  padding: 0rem 2.5rem;
+}
