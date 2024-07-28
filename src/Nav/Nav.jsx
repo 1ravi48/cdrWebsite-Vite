@@ -41,7 +41,11 @@ export default function Nav() {
         </div>
         {isOpen && (
           <ul className={styles.MenuLinks}>
-            <li className={styles.ListItem}>
+            <li
+              className={
+                homeHovering ? styles.ListItemHover : styles.ListItemNotHover
+              }
+            >
               <a
                 href="#home"
                 className={homeHovering ? styles.Hover : styles.NotHover}
@@ -51,7 +55,11 @@ export default function Nav() {
                 Home
               </a>
             </li>
-            <li className={styles.ListItem}>
+            <li
+              className={
+                aboutHovering ? styles.ListItemHover : styles.ListItemNotHover
+              }
+            >
               <a
                 href="#about"
                 className={aboutHovering ? styles.Hover : styles.NotHover}
@@ -61,7 +69,11 @@ export default function Nav() {
                 About Us
               </a>
             </li>
-            <li className={styles.ListItem}>
+            <li
+              className={
+                storyHovering ? styles.ListItemHover : styles.ListItemNotHover
+              }
+            >
               <a
                 href="#story"
                 className={storyHovering ? styles.Hover : styles.NotHover}
@@ -71,7 +83,11 @@ export default function Nav() {
                 Our Story
               </a>
             </li>
-            <li className={styles.ListItem}>
+            <li
+              className={
+                teamHovering ? styles.ListItemHover : styles.ListItemNotHover
+              }
+            >
               <a
                 href="#team"
                 className={teamHovering ? styles.Hover : styles.NotHover}
@@ -81,7 +97,11 @@ export default function Nav() {
                 Our Team
               </a>
             </li>
-            <li className={styles.ListItem}>
+            <li
+              className={
+                contactHovering ? styles.ListItemHover : styles.ListItemNotHover
+              }
+            >
               <a
                 href="#contact"
                 className={contactHovering ? styles.Hover : styles.NotHover}

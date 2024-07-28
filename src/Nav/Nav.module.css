@@ -1,6 +1,6 @@
 .NavContainer {
   width: 100vw;
-  height: 89px;
+  height: 8.9rem;
   padding-left: 8.4%;
   padding-right: 8.4%;
   position: sticky;
@@ -8,19 +8,19 @@
 }
 
 .logo {
-  height: 63px;
+  height: 6.3rem;
   /* border: solid; */
   position: absolute;
-  top: 22px;
+  top: 2.2rem;
 }
 
 .HamburgerContainer {
-  width: 40px;
+  width: 4rem;
   height: auto;
   /* border: solid; */
   position: absolute;
   right: 8.4%;
-  top: 35px;
+  top: 3.5rem;
 }
 
 .HamburgerIcon {
@@ -30,17 +30,33 @@
 
 .MenuLinks {
   list-style-type: none;
-  /* border: solid; */
-  width: 25%;
+  width: 30%;
   position: absolute;
-  right: 0;
-  top: 87px;
+  right: 8.4%;
+  top: 8.7rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.ListItem {
-  border: solid;
-  border-width: 1px;
+.ListItemHover {
+  /* border: solid; */
+  border-width: 0.1rem;
   text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: var(--purple);
+  font-weight: 700;
+  /* background-color: white; */
+}
+
+.ListItemNotHover {
+  border-width: 0.1rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: black;
 }
 
 .NotHover {
@@ -50,5 +66,10 @@
 
 .Hover {
   text-decoration: none;
-  color: purple;
+  color: white;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
 }
