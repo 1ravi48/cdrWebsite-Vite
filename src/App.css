@@ -1,0 +1,8 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  /* Subtle border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+}
