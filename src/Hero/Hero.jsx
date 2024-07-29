@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
 import heroImage from "../assets/images/hero_image.svg";
+import SemiCircle from "../Reusables/SemiCircle/SemiCircle";
 
 export default function Hero() {
   return (
@@ -19,7 +20,12 @@ export default function Hero() {
           online – fast.
         </p>
 
-        <img src={heroImage} alt="Image by vectorjuice on Freepik" />
+        <img
+          src={heroImage}
+          className={styles.heroImage}
+          alt="Image by vectorjuice on Freepik"
+        />
+        <SemiCircle />
       </section>
     </>
   );

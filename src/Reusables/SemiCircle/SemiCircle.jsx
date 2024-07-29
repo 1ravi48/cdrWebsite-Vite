@@ -1,9 +1,10 @@
+import styles from "./SemiCircle.module.css";
+
 const SemiCircle = () => {
   return (
     <svg
-      width="72"
-      height="36"
-      viewBox="0 0 72 72"
+      className={styles.semiCircle}
+      viewBox="-1 -1 74 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
