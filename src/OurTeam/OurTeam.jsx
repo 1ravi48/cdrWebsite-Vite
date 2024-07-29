@@ -25,14 +25,14 @@ const OurTeam = () => {
       name: "David A Silva",
       title: "Software Developer",
       description:
-        "Passionate about creating software and web applications, David is transitioning from music to tech with determination and exploring creativity through code.",
+        "Hi, I'm David. Driven by a passion to create, I've transitioned from music to tech. I'm dedicated to building software and web applications that push the boundaries of digital creativity.",
     },
     {
       image: raviImage,
       name: "Ravi Kataria",
       title: "Software Developer",
       description:
-        "I come from a background in education and am transitioning into technology. I love the problem-solving nature of the tech field and can't wait to devise solutions!",
+        "Hi, I'm Ravi! With a strong foundation in education, I've honed my ability to break down complex problems. I'm eager to contribute my skills to building innovative products that leave a lasting impact.",
     },
   ];
 
@@ -40,23 +40,25 @@ const OurTeam = () => {
     <>
       <section id="#team">
         <SectionTitle title="Our Team" />
-        <Swiper
-          pagination={{ clickable: true }}
-          modules={[Pagination]}
-          className={styles.teamSlider}
-        >
-          {teamMembers.map((member, index) => (
-            <SwiperSlide key={index}>
-              <MemberProfile
-                image={member.image}
-                name={member.name}
-                title={member.title}
-                description={member.description}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <SemiCircle className={styles.SemiCircle} />
+        <div className={styles.OurTeamSectionContainer}>
+          <Swiper
+            pagination={{ clickable: true }}
+            modules={[Pagination]}
+            className={styles.teamSlider}
+          >
+            {teamMembers.map((member, index) => (
+              <SwiperSlide key={index}>
+                <MemberProfile
+                  image={member.image}
+                  name={member.name}
+                  title={member.title}
+                  description={member.description}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <SemiCircle />
       </section>
     </>
   );

@@ -1,6 +1,8 @@
 .teamMemberCardContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 60rem;
 }
 
 .teamMemberContent {
@@ -16,7 +18,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 1.5rem;
-  width: 70%;
+  width: 85%;
   height: 53rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
