@@ -31,11 +31,11 @@
 
 .MenuLinks {
   list-style-type: none;
-  width: 30%;
+  width: 40%;
   position: absolute;
   right: 8.4%;
   top: 8.7rem;
-  border-radius: 1.5rem;
+  border-radius: 1.1rem;
   background-color: white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -44,20 +44,27 @@
   /* border: solid; */
   border-width: 0.1rem;
   text-align: center;
-  padding: 0.5rem;
-  font-size: 1.5rem;
+  padding: 1.7rem;
+  font-size: 2rem;
   color: white;
   background-color: var(--purple);
   font-weight: 700;
-  /* background-color: white; */
 }
 
 .ListItemNotHover {
   border-width: 0.1rem;
   text-align: center;
-  padding: 0.5rem;
-  font-size: 1.5rem;
+  padding: 1.7rem;
+  font-size: 2rem;
   color: black;
+}
+
+.ListItemHover:first-child {
+  border-radius: 1.1rem 1.1rem 0 0;
+}
+
+.ListItemHover:last-child {
+  border-radius: 0 0 1.1rem 1.1rem;
 }
 
 .NotHover {
