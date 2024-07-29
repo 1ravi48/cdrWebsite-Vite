@@ -1,3 +1,7 @@
+.semiCircle {
+  width: 15%;
+}
+
 /* Align to the right */
 .circle-wrapper .circleRight {
   justify-self: right;
