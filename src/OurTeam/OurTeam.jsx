@@ -18,7 +18,7 @@ const OurTeam = () => {
       name: "Catherine Sarquís",
       title: "Software Developer",
       description:
-        "Hej! I'm Catherine, and I'm excited to transform your ideas into code. I love languages, both human & programming, and I'm excited to use my interests to create solutions that make a difference.",
+        "Hej! I'm Catherine, and I enjoy transforming your ideas into code. I love languages, both human & programming, and I'm excited to use my interests to make a difference.",
     },
     {
       image: davidImage,
