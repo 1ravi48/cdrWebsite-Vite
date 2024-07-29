@@ -4,6 +4,7 @@ import Hero from "./Hero/Hero";
 import OurTeam from "./OurTeam/OurTeam";
 import About from "./About/About";
 import Story from "./OurStory/OurStory";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Story />
       <OurTeam />
+      <Footer />
     </div>
   );
 }
