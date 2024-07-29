@@ -26,7 +26,9 @@ export default function About() {
           className={styles.aboutImage}
           alt="Image by vectorjuice on Freepik"
         />
-        <SemiCircle />
+        <div className={styles.circleWrapper}>
+          <SemiCircle className={styles.circleRight} />
+        </div>
       </section>
     </>
   );

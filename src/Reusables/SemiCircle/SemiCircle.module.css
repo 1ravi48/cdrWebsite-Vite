@@ -2,13 +2,6 @@
   width: 17%;
 }
 
-/* Align to the right */
 .circle-wrapper .circleRight {
   justify-self: right;
-}
-
-/* Align to the left */
-.circle-wrapper .circleLeft {
-  position: absolute;
-  justify-self: left;
 }
