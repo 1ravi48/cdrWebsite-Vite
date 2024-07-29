@@ -18,7 +18,7 @@ const OurTeam = () => {
       name: "Catherine Sarquís",
       title: "Software Developer",
       description:
-        "Catherine is transitioning into software development, driven by her passion for detail and problem-solving. Catherine's experience in proofreading, digital editing, and love of languages bring a unique perspective to her work.",
+        "Hej! I'm Catherine, and I'm excited about transforming your ideas into code. I love languages, both human and programming, and I'm excited to use my skills to create innovative solutions that make a difference.",
     },
     {
       image: davidImage,
