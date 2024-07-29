@@ -6,7 +6,7 @@ import aboutImage from "../assets/images/about_image.svg";
 export default function About() {
   return (
     <>
-      <section href="#about">
+      <section id="about">
         <SectionTitle title="About Us" />
         <p>
           Our journey as CDR Devs started with a shared dream: to use our coding

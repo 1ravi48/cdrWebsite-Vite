@@ -1,11 +1,10 @@
-import styles from "./OurStory.module.css";
 import SectionTitle from "../Reusables/SectionTitle/SectionTitle.jsx";
 import SemiCircle from "../Reusables/SemiCircle/SemiCircle";
 
 export default function Story() {
   return (
     <>
-      <section href="#story">
+      <section id="story">
         <SectionTitle title="Our Story" />
         <p>
           We&apos;re a team of three developers who have been through the same

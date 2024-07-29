@@ -5,7 +5,7 @@ import SemiCircle from "../Reusables/SemiCircle/SemiCircle";
 export default function Hero() {
   return (
     <>
-      <section href="#home">
+      <section id="home">
         <h1>
           <span className={styles.thin}>
             No&nbsp;

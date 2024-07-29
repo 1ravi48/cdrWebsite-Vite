@@ -38,7 +38,7 @@ const OurTeam = () => {
 
   return (
     <>
-      <section id="#team">
+      <section id="team">
         <SectionTitle title="Our Team" />
         <div className={styles.OurTeamSectionContainer}>
           <Swiper
