@@ -32,6 +32,8 @@ section {
   padding-right: 8.4%;
 }
 
+/*
+   This works because the first child is the nav (not a section) and so first occurance of section is an even child (Hero) which is don't want highlighted   */
 section:nth-child(odd) {
   background-color: var(--lightBlueGrey);
 }

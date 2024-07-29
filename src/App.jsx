@@ -11,6 +11,7 @@ function App() {
     <div className="container">
       <Nav />
       <Hero />
+
       <SectionTitle title="About Us" />
       <MemberProfile
         image={Ravi}

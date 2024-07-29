@@ -1,5 +1,7 @@
+/* TO FIX: NAV BAR loses composure after 1600px vw */
+
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   border: 1px solid #eee;
   /* Subtle border */
