@@ -13,14 +13,14 @@ export default function About() {
           skills to have a positive impact on the world 🔥.
         </p>
         <p>
-          We're a team of passionate developers who believe that a well-crafted
-          website can be a powerful tool for growth and success.
+          We&apos;re a team of passionate developers who believe that a
+          well-crafted website can be a powerful tool for growth and success.
         </p>
         <p>
-          Whether you're a small business or a freelance creative, we're here to
-          help you reach your full online potential.
+          Whether you&apos;re a small business or a freelance creative,
+          we&apos;re here to help you reach your full online potential.
         </p>
-        <p>Let's create something extraordinary!</p>
+        <p>Let&apos;s create something extraordinary!</p>
         <img
           src={aboutImage}
           className={styles.aboutImage}
