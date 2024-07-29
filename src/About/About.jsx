@@ -1,5 +1,7 @@
+import styles from "./About.module.css";
 import SectionTitle from "../Reusables/SectionTitle/SectionTitle.jsx";
 import SemiCircle from "../Reusables/SemiCircle/SemiCircle";
+import aboutImage from "../assets/images/about_image.svg";
 
 export default function About() {
   return (
@@ -19,6 +21,11 @@ export default function About() {
           help you reach your full online potential.
         </p>
         <p>Let's create something extraordinary!</p>
+        <img
+          src={aboutImage}
+          className={styles.aboutImage}
+          alt="Image by vectorjuice on Freepik"
+        />
         <SemiCircle />
       </section>
     </>
