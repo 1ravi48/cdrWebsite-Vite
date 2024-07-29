@@ -32,7 +32,7 @@ const OurTeam = () => {
       name: "Ravi Kataria",
       title: "Software Developer",
       description:
-        "Hi, I'm Ravi! I come from a background in education and am currently transitioning into technology. I love the problem-solving nature of the tech field and can't wait to use my knowledge to devise solutions!",
+        "I come from a background in education and am transitioning into technology. I love the problem-solving nature of the tech field and can't wait to devise solutions!",
     },
   ];
 
