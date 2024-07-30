@@ -4,7 +4,10 @@
   height: 8.9rem;
   padding-left: 8.4%;
   padding-right: 8.4%;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
   /* border: solid; */
 }
 
