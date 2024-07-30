@@ -15,6 +15,31 @@ export default function Nav() {
   const [teamHovering, setTeamHovering] = useState(false);
   const [contactHovering, setContactHovering] = useState(false);
 
+  function navHomeClick() {
+    setIsOpen(false);
+    setHomeHovering(false);
+  }
+
+  function navAboutClick() {
+    setIsOpen(false);
+    setAboutHovering(false);
+  }
+
+  function navStoryClick() {
+    setIsOpen(false);
+    setStoryHovering(false);
+  }
+
+  function navTeamClick() {
+    setIsOpen(false);
+    setTeamHovering(false);
+  }
+
+  function navContactClick() {
+    setIsOpen(false);
+    setContactHovering(false);
+  }
+
   return (
     <>
       <nav className={styles.NavContainer}>
@@ -51,6 +76,7 @@ export default function Nav() {
                 className={homeHovering ? styles.Hover : styles.NotHover}
                 onMouseEnter={() => setHomeHovering(true)}
                 onMouseLeave={() => setHomeHovering(false)}
+                onClick={navHomeClick}
               >
                 Home
               </a>
@@ -65,6 +91,7 @@ export default function Nav() {
                 className={aboutHovering ? styles.Hover : styles.NotHover}
                 onMouseEnter={() => setAboutHovering(true)}
                 onMouseLeave={() => setAboutHovering(false)}
+                onClick={navAboutClick}
               >
                 About Us
               </a>
@@ -79,6 +106,7 @@ export default function Nav() {
                 className={storyHovering ? styles.Hover : styles.NotHover}
                 onMouseEnter={() => setStoryHovering(true)}
                 onMouseLeave={() => setStoryHovering(false)}
+                onClick={navStoryClick}
               >
                 Our Story
               </a>
@@ -93,6 +121,7 @@ export default function Nav() {
                 className={teamHovering ? styles.Hover : styles.NotHover}
                 onMouseEnter={() => setTeamHovering(true)}
                 onMouseLeave={() => setTeamHovering(false)}
+                onClick={navTeamClick}
               >
                 Our Team
               </a>
@@ -107,6 +136,7 @@ export default function Nav() {
                 className={contactHovering ? styles.Hover : styles.NotHover}
                 onMouseEnter={() => setContactHovering(true)}
                 onMouseLeave={() => setContactHovering(false)}
+                onClick={navContactClick}
               >
                 Contact Us
               </a>
