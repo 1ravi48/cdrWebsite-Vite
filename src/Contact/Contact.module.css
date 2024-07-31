@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 41.4rem;
-  width: 35.5rem;
+  width: 100%;
   border-radius: 0.5rem;
   background-color: var(--lightBlueGrey);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
