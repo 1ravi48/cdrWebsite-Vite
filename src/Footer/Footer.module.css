@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   background-color: var(--lightBlueGrey);
-  height: 4.5rem;
+  height: 5rem;
   padding-left: 8.4%;
   padding-right: 8.4%;
   display: flex;
@@ -12,8 +12,7 @@
 .footer p {
   margin: 0;
   font-weight: 200;
-  font-size: 0.95rem;
-  ;
+  font-size: 1rem;
 }
 
 
