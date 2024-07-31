@@ -10,7 +10,13 @@ export default function Footer() {
 
       <div className={styles.footerLinks}>
         <p>Find us on&nbsp;</p>
-        <img className={styles.fiverrIcon} src={fiverrIcon} alt="Fiverr Icon" />
+        <a href="https://www.fiverr.com">
+          <img
+            className={styles.fiverrIcon}
+            src={fiverrIcon}
+            alt="Fiverr Icon"
+          />
+        </a>
       </div>
     </div>
   );
