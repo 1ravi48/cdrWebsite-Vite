@@ -1,7 +1,6 @@
 import styles from "./Contact.module.css";
 import SectionTitle from "../Reusables/SectionTitle/SectionTitle";
 import SemiCircle from "../Reusables/SemiCircle/SemiCircle";
-import Button from "../Reusables/Button/Button";
 
 function Contact() {
   return (
@@ -36,8 +35,11 @@ function Contact() {
                 </div>
               </div>
               <div className={styles.formBtnContainer}>
-                <input className="hover btn" type="submit" value="Submit" />
-                <Button btnText="Submit 📩" />
+                <input
+                  className={styles.submitBtn}
+                  type="submit"
+                  value="Submit 📩"
+                />
               </div>
             </form>
           </div>

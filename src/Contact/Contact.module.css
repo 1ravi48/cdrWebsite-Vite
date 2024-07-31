@@ -66,3 +66,19 @@ textarea {
 .SectionFormContainer {
   margin-bottom: 3.1rem;
 }
+
+.submitBtn {
+  font-family: noto-sans, sans-serif;
+  padding: 19px 30px;
+  font-size: 1.5rem;
+  background-color: #57007b;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.75px;
+  border: none;
+  border-radius: 10px;
+}
+
+.submitBtn:active {
+  transform: translateY(2px);
+}
