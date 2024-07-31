@@ -16,7 +16,7 @@ function Contact() {
         </p>
         <div className={styles.SectionFormContainer}>
           <div className={styles.formContainer}>
-            <form action="" method="post">
+            <form action="https://formspree.io/f/xnnadpye" method="post">
               <div className={styles.formGroup}>
                 <label htmlFor="name">🙎🏻‍♂️ Name</label>
                 <div className={styles.gradientBg}>
