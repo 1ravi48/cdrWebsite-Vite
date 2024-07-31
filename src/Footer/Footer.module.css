@@ -11,4 +11,19 @@
 
 .footer p {
   margin: 0;
+  font-weight: 200;
+  font-size: 0.95rem;
+  ;
+}
+
+
+.fiverrIcon {
+  height: 1.4rem;
+  width: auto;
+  vertical-align: middle;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: baseline;
 }
