@@ -1,3 +1,9 @@
 .OurTeamSectionContainer {
-  padding-bottom: 7.8rem;
+  padding-bottom: 7.5rem;
+}
+
+.circleWrapper {
+  display: flex;
+  /* width: 100%; */
+  justify-content: flex-end;
 }

@@ -1,5 +1,6 @@
 import SectionTitle from "../Reusables/SectionTitle/SectionTitle.jsx";
 import SemiCircle from "../Reusables/SemiCircle/SemiCircle";
+import styles from "./OurStory.module.css";
 
 export default function Story() {
   return (
@@ -14,17 +15,40 @@ export default function Story() {
           full-stack software development life cycle, including (but not limited
           to):
         </p>
-        <p>
-          <ul>
-            <li>Front-end development</li>
-            <li>Back-end development</li>
-            <li>Database management</li>
-            <li>Project management</li>
-            <li>Version control</li>
-            <li>Testing</li>
-            <li>Deployment</li>
-          </ul>
-        </p>
+
+        <div className={styles.skillsContainer}>
+          <div className={styles.lozenge} id="skill1">
+            empathising with clients
+          </div>
+          <div className={styles.lozenge} id="skill2">
+            generating ideas
+          </div>
+          <div className={styles.lozenge} id="skill3">
+            conducting research
+          </div>
+          <div className={styles.lozenge} id="skill4">
+            wireframing
+          </div>
+          <div className={styles.lozenge} id="skill5">
+            prototyping
+          </div>
+          <div className={styles.lozenge} id="skill6">
+            building backend servers
+          </div>
+          <div className={styles.lozenge} id="skill7">
+            managing databases
+          </div>
+          <div className={styles.lozenge} id="skill8">
+            building frontend UI/UX
+          </div>
+          <div className={styles.lozenge} id="skill9">
+            testing for QA
+          </div>
+          <div className={styles.lozenge} id="skill10">
+            deploying software
+          </div>
+        </div>
+
         <p>
           Each of us worked in separate teams during the bootcamp, contributing
           to and learning from three very different projects (see the Projects

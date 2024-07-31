@@ -58,7 +58,9 @@ const OurTeam = () => {
             ))}
           </Swiper>
         </div>
-        <SemiCircle />
+        <div className={styles.circleWrapper}>
+          <SemiCircle className={styles.circleRight} />
+        </div>
       </section>
     </>
   );
