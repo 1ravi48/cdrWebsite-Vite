@@ -36,6 +36,7 @@ function Contact() {
                 </div>
               </div>
               <div className={styles.formBtnContainer}>
+                <input className="hover btn" type="submit" value="Submit" />
                 <Button btnText="Submit 📩" />
               </div>
             </form>
