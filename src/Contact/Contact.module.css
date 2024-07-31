@@ -1,0 +1,68 @@
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 41.4rem;
+  width: 35.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--lightBlueGrey);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradientBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30.7rem;
+  height: 4.7rem;
+  border-radius: 0.5rem;
+  background: var(--gradient);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gradientBgText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30.7rem;
+  height: 12.3rem;
+  border-radius: 0.5rem;
+  background: var(--gradient);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input,
+textarea {
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.formGroup {
+  padding-top: 1.3rem;
+  font-size: 1.4rem;
+}
+
+.formGroup input {
+  width: 30.5rem;
+  height: 4.5rem;
+}
+
+.formGroup textarea {
+  width: 30.5rem;
+  height: 12.1rem;
+}
+
+.formBtnContainer {
+  padding: 1.9rem 0rem;
+}
+
+.SectionFormContainer {
+  margin-bottom: 3.1rem;
+}
