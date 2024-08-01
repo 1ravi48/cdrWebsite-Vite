@@ -37,11 +37,6 @@ export default function About() {
           dedicated frontend developers can make.
         </p>
 
-        <img
-          src={aboutImage}
-          className={styles.aboutImage}
-          alt="Image by vectorjuice on Freepik"
-        />
         <div className={styles.circleWrapper}>
           <SemiCircle className={styles.circleRight} />
         </div>
