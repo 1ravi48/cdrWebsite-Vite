@@ -9,8 +9,8 @@ export default function OurServices() {
         <SectionTitle title="Our Services" />
         <p>
           <b>Website Design:</b> Enhancing your website&apos;s visual appeal by
-          carefully selecting colors, fonts, layouts, and images that align with
-          your brand and resonate with your customers.
+          carefully selecting colours, fonts, layouts, and images that align
+          with your brand and resonate with your customers.
         </p>
         <p>
           <b>Responsive Design:</b> Ensuring your website adapts seamlessly to
