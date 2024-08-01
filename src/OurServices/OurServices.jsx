@@ -38,7 +38,7 @@ const OurServices = () => {
       description:
         "Revitalising your existing website by revamping its visual aesthetics and functionality to attract new customers and enhance overall appeal.",
       imgBg: "#FFC444",
-      textBg: "#FFEBB2",
+      textBg: "#FFFDCB",
     },
   ];
 
