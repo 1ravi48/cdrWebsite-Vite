@@ -8,54 +8,40 @@ export default function OurServices() {
     <>
       <section id="services">
         <SectionTitle title="Our Services" />
+        <h3>Website Design</h3>
         <p>
-          We&apos;re a team of three developers who have been through the same
-          software development bootcamp and are hungry to take on real-world
-          projects that leave a lasting impact. Our experience on the bootcamp
-          provided us with insight into all of the stages involved in the
-          full-stack software development life cycle, including (but not limited
-          to):
+          Your website is your digital storefront. We create visually stunning
+          designs that capture your brand&apos;s essence, using captivating
+          colors, fonts, layouts, and imagery. Think of it as a complete
+          makeover for your online image – we&apos;ll make your website
+          irresistible!
         </p>
 
-        <div className={styles.skillsContainer}>
-          <div className={styles.lozenge} id="skill1">
-            empathising with clients
-          </div>
-          <div className={styles.lozenge} id="skill2">
-            generating ideas
-          </div>
-          <div className={styles.lozenge} id="skill3">
-            conducting research
-          </div>
-          <div className={styles.lozenge} id="skill4">
-            wireframing
-          </div>
-          <div className={styles.lozenge} id="skill5">
-            prototyping
-          </div>
-          <div className={styles.lozenge} id="skill6">
-            building backend servers
-          </div>
-          <div className={styles.lozenge} id="skill7">
-            managing databases
-          </div>
-          <div className={styles.lozenge} id="skill8">
-            building frontend UI/UX
-          </div>
-          <div className={styles.lozenge} id="skill9">
-            testing for QA
-          </div>
-          <div className={styles.lozenge} id="skill10">
-            deploying software
-          </div>
-        </div>
-
+        <h3>Responsive Design</h3>
         <p>
-          Each of us worked in separate teams during the bootcamp, contributing
-          to and learning from three very different projects (see the Projects
-          section). Together, this has allowed us to combine a diverse set of
-          skills, with each of us bringing something unique to the table.
+          In today&apos;s mobile world, your website needs to adapt seamlessly
+          to any device. Our responsive designs ensure that your site looks
+          flawless and functions perfectly on smartphones, tablets, laptops, and
+          desktops. This means your customers will have a smooth experience no
+          matter how they access your site.
         </p>
+
+        <h3>Interactive Features</h3>
+        <p>
+          Don&apos;t let your website be a boring brochure. We add dynamic
+          elements like animated menus, smooth scrolling, image sliders, and
+          interactive forms to make your website truly engaging. These features
+          grab your visitors&apos; attention and keep them coming back for more.
+        </p>
+
+        <h3>Website Redesign</h3>
+        <p>
+          If your current website is outdated or underperforming, we&apos;ll
+          give it a fresh new look and feel. Our redesign service revitalizes
+          your brand&apos;s online presence, ensuring it stays relevant and
+          appealing in today&apos;s competitive landscape.
+        </p>
+
         <img
           src={aboutImage}
           className={styles.aboutImage}

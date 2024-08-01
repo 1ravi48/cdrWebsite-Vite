@@ -11,29 +11,3 @@
   font-weight: bold;
   text-align: center;
 }
-
-/* Color Theme Swatches in Hex (Lightened by 50%) */
-#skill1 {
-  background-color: #f9c0d0;
-  /* Original: #F28095 */
-}
-
-#skill2 {
-  background-color: #e6d3f9;
-  /* Original: #DCA7F2 */
-}
-
-#skill3 {
-  background-color: #dbd5f9;
-  /* Original: #977EF2 */
-}
-
-#skill4 {
-  background-color: #a5aed8;
-  /* Original: #46518C */
-}
-
-#skill5 {
-  background-color: #f9d1a6;
-  /* Original: #F2994B */
-}
