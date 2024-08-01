@@ -1,12 +1,13 @@
 import SectionTitle from "../Reusables/SectionTitle/SectionTitle.jsx";
-import SemiCircle from "../Reusables/SemiCircle/SemiCircle";
-import styles from "./OurStory.module.css";
+import SemiCircle from "../Reusables/SemiCircle/SemiCircle.jsx";
+import styles from "./OurServices.module.css";
+import aboutImage from "../assets/images/about_image.svg";
 
-export default function Story() {
+export default function OurServices() {
   return (
     <>
-      <section id="story">
-        <SectionTitle title="Our Story" />
+      <section id="services">
+        <SectionTitle title="Our Services" />
         <p>
           We&apos;re a team of three developers who have been through the same
           software development bootcamp and are hungry to take on real-world
@@ -55,6 +56,11 @@ export default function Story() {
           section). Together, this has allowed us to combine a diverse set of
           skills, with each of us bringing something unique to the table.
         </p>
+        <img
+          src={aboutImage}
+          className={styles.aboutImage}
+          alt="Image by vectorjuice on Freepik"
+        />
         <SemiCircle />
       </section>
     </>

@@ -11,7 +11,7 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [homeHovering, setHomeHovering] = useState(false);
   const [aboutHovering, setAboutHovering] = useState(false);
-  const [storyHovering, setStoryHovering] = useState(false);
+  const [servicesHovering, setServicesHovering] = useState(false);
   const [teamHovering, setTeamHovering] = useState(false);
   const [contactHovering, setContactHovering] = useState(false);
 
@@ -25,9 +25,9 @@ export default function Nav() {
     setAboutHovering(false);
   }
 
-  function navStoryClick() {
+  function navServicesClick() {
     setIsOpen(false);
-    setStoryHovering(false);
+    setServicesHovering(false);
   }
 
   function navTeamClick() {
@@ -98,17 +98,19 @@ export default function Nav() {
             </li>
             <li
               className={
-                storyHovering ? styles.ListItemHover : styles.ListItemNotHover
+                servicesHovering
+                  ? styles.ListItemHover
+                  : styles.ListItemNotHover
               }
             >
               <a
-                href="#story"
-                className={storyHovering ? styles.Hover : styles.NotHover}
-                onMouseEnter={() => setStoryHovering(true)}
-                onMouseLeave={() => setStoryHovering(false)}
-                onClick={navStoryClick}
+                href="#services"
+                className={servicesHovering ? styles.Hover : styles.NotHover}
+                onMouseEnter={() => setServicesHovering(true)}
+                onMouseLeave={() => setServicesHovering(false)}
+                onClick={navServicesClick}
               >
-                Our Story
+                Our Services
               </a>
             </li>
             <li

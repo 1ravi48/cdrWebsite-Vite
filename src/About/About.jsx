@@ -1,7 +1,6 @@
 import styles from "./About.module.css";
 import SectionTitle from "../Reusables/SectionTitle/SectionTitle.jsx";
 import SemiCircle from "../Reusables/SemiCircle/SemiCircle";
-import aboutImage from "../assets/images/about_image.svg";
 
 export default function About() {
   return (
