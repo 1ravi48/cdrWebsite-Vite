@@ -10,8 +10,8 @@ const OurServices = () => {
       subtitle: "Website Design:",
       description:
         "Enhancing your website's visual appeal by carefully selecting colours, fonts, layouts, and images that align with your brand and resonate with your customers.",
-      imgBg: "#f0f0f0",
-      textBg: "#ffffff",
+      imgBg: "#5D6EE2",
+      textBg: "#F1F2FF",
     },
     {
       image: "",
@@ -19,8 +19,8 @@ const OurServices = () => {
       subtitle: "Responsive Design:",
       description:
         "Ensuring your website adapts seamlessly to various screen sizes, guaranteeing optimal viewing and functionality across phones, tablets, laptops, and desktops.",
-      imgBg: "#f0f0f0",
-      textBg: "#ffffff",
+      imgBg: "#5CEDAC",
+      textBg: "#F0FFF7",
     },
     {
       image: "",
@@ -28,8 +28,8 @@ const OurServices = () => {
       subtitle: "Interactive Features:",
       description:
         "Integrating engaging elements like animated menus, smooth scrolling, image sliders, and interactive forms to elevate user experience and captivate visitors.",
-      imgBg: "#f0f0f0",
-      textBg: "#ffffff",
+      imgBg: "#E466C9",
+      textBg: "#FFF4F4",
     },
     {
       image: "",
@@ -37,8 +37,8 @@ const OurServices = () => {
       subtitle: "Website Redesign:",
       description:
         "Revitalising your existing website by revamping its visual aesthetics and functionality to attract new customers and enhance overall appeal.",
-      imgBg: "#f0f0f0",
-      textBg: "#ffffff",
+      imgBg: "#FFC444",
+      textBg: "#FFEBB2",
     },
   ];
 
