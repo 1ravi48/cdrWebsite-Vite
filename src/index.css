@@ -31,7 +31,8 @@ section {
   padding-left: 8.4%;
   padding-right: 8.4%;
   border-bottom: solid 0.2rem var(--lineColour);
-  scroll-margin-top: 8.9rem; /* this prevent the top of the section appearing behind the NavBar when the NavBar has a fixed-position on the screen */
+  scroll-margin-top: 8.9rem;
+  /* this prevent the top of the section appearing behind the NavBar when the NavBar has a fixed-position on the screen */
 }
 
 /*
