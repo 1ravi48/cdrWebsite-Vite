@@ -18,8 +18,8 @@ const ServicesCard = ({
         className={styles.descriptionContainer}
         style={{ backgroundColor: textBg }}
       >
-        <h2>{subtitle}</h2>
-        <p>{description}</p>
+        <h2 className={styles.subtile}>{subtitle}</h2>
+        <p className={styles.descriptionText}>{description}</p>
       </div>
     </div>
   );

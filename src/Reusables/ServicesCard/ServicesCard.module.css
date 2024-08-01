@@ -1,0 +1,26 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.3rem;
+  width: 31.8rem;
+  height: 30rem;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 15rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.descriptionContainer {
+  width: 100%;
+  height: 15rem;
+  padding: 1rem 2rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.subtile {
+  margin-bottom: 1rem;
+}
