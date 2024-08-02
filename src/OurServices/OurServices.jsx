@@ -6,6 +6,7 @@ import WebsiteDesign from "../assets/images/website_design.svg";
 import ResponsiveDesign from "../assets/images/responsive_design.svg";
 import InteractiveFeatures from "../assets/images/interactive_features.svg";
 import WebsiteRedesign from "../assets/images/website_redesign.svg";
+import styles from "./OurServices.module.css";
 
 const OurServices = () => {
   const servicesProvided = [
@@ -50,7 +51,7 @@ const OurServices = () => {
   return (
     <section id="services">
       <SectionTitle title="Our Services" />
-      <div className="services-container">
+      <div className={styles.servicesContainer}>
         {servicesProvided.map((service, index) => (
           <ServicesCard
             key={index}
