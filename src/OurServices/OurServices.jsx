@@ -1,11 +1,16 @@
+"use client";
 import SectionTitle from "../Reusables/SectionTitle/SectionTitle.jsx";
 import SemiCircle from "../Reusables/SemiCircle/SemiCircle.jsx";
 import ServicesCard from "../Reusables/ServicesCard/ServicesCard.jsx";
+import WebsiteDesign from "../assets/images/website_design.svg";
+import ResponsiveDesign from "../assets/images/responsive_design.svg";
+import InteractiveFeatures from "../assets/images/interactive_features.svg";
+import WebsiteRedesign from "../assets/images/website_redesign.svg";
 
 const OurServices = () => {
   const servicesProvided = [
     {
-      image: "",
+      image: WebsiteDesign,
       name: "Website Design",
       subtitle: "Website Design:",
       description:
@@ -14,7 +19,7 @@ const OurServices = () => {
       textBg: "#F1F2FF",
     },
     {
-      image: "",
+      image: ResponsiveDesign,
       name: "Responsive Design",
       subtitle: "Responsive Design:",
       description:
@@ -23,7 +28,7 @@ const OurServices = () => {
       textBg: "#F0FFF7",
     },
     {
-      image: "",
+      image: InteractiveFeatures,
       name: "Interactive Features",
       subtitle: "Interactive Features:",
       description:
@@ -32,7 +37,7 @@ const OurServices = () => {
       textBg: "#FFF4F4",
     },
     {
-      image: "",
+      image: WebsiteRedesign,
       name: "Website Redesign",
       subtitle: "Website Redesign:",
       description:
