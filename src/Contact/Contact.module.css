@@ -1,3 +1,7 @@
+.contactImage {
+  display: none;
+}
+
 .formContainer {
   display: flex;
   align-items: center;
@@ -42,7 +46,10 @@ input,
 textarea {
   border: none;
   border-radius: 0.4rem;
+  padding: 1rem;
 }
+
+
 
 .formGroup {
   padding-top: 1.3rem;
@@ -81,4 +88,63 @@ textarea {
 
 .submitBtn:active {
   transform: translateY(2px);
+}
+
+@media (min-width: 800px) {
+
+  .contactContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contactLeft {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  .contactImage {
+    display: flex;
+    width: 50%;
+    height: auto;
+    align-self: center;
+  }
+
+  .SectionFormContainer {
+    width: 55%;
+  }
+
+  .formContainer {
+    height: fit-content;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .formGroup {
+    width: 100%;
+    padding-bottom: 2.5rem;
+  }
+
+  .gradientBg {
+    width: 100%;
+    margin-top: 0.7rem;
+  }
+
+  .formGroup input {
+    width: 99.5%;
+  }
+
+  .gradientBgText {
+    width: 100%;
+    margin-top: 0.7rem;
+  }
+
+  .formGroup textarea {
+    width: 99.5%;
+  }
+
+
 }
