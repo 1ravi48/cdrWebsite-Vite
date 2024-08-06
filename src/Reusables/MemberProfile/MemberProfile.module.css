@@ -67,3 +67,43 @@
 .github-icon path {
   fill: aquamarine;
 }
+
+@media (min-width: 800px) {
+
+  .teamMemberCardContainer {
+    height: 40rem;
+  }
+
+  .teamMemberCard {
+    flex-direction: row;
+    height: 30rem;
+  }
+
+  .teamMemberImage {
+    height: 25rem;
+    width: 25rem;
+    margin-right: 2rem;
+  }
+
+  .teamMemberContent {
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .teamMemberDescription {
+    padding: 0rem;
+  }
+
+  .teamMemberName {
+    font-size: 3rem;
+  }
+
+  .teamMemberTitle {
+    font-size: 2rem;
+  }
+
+  .SocialsContainer {
+    width: 50%;
+  }
+}
