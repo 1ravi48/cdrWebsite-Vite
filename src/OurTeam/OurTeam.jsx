@@ -18,7 +18,10 @@ const OurTeam = () => {
       name: "Catherine Sarquís",
       title: "Software Developer",
       description:
-        "Hej! Jeg er Catherine. If you can't already tell, I love languages (both human and programming) and I enjoy transforming ideas into code. I'm excited to use my interests to make a difference.",
+        "Hej! Jeg er Catherine. I love languages (all kinds) and I enjoy transforming ideas into code. I'm excited to use my interests to make a difference by improving lives through technology.",
+      linkedIn: "https://www.linkedin.com/in/sarquis",
+      github: "https://github.com/csarq",
+      twitter: "https://x.com/catherineSrqs",
     },
     {
       image: davidImage,
@@ -26,6 +29,8 @@ const OurTeam = () => {
       title: "Software Developer",
       description:
         "Hi, I'm David. Driven by a passion to create, I've transitioned from music to tech. I'm dedicated to building software and web applications that push the boundaries of digital creativity.",
+      linkedIn: "https://www.linkedin.com/in/davidadamsilva",
+      github: "https://github.com/davidadam1323",
     },
     {
       image: raviImage,
@@ -33,6 +38,8 @@ const OurTeam = () => {
       title: "Software Developer",
       description:
         "Hi, I'm Ravi! With a strong foundation in education, I've honed my ability to break down complex problems. I'm eager to contribute my skills to building innovative products that leave a lasting impact.",
+      linkedIn: "https://www.linkedin.com/in/ravi-kataria-1617162b1",
+      github: "https://github.com/1ravi48",
     },
   ];
 
@@ -53,6 +60,9 @@ const OurTeam = () => {
                   name={member.name}
                   title={member.title}
                   description={member.description}
+                  linkedIn={member.linkedIn}
+                  github={member.github}
+                  twitter={member.twitter}
                 />
               </SwiperSlide>
             ))}
