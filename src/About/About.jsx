@@ -8,11 +8,9 @@ export default function About() {
       <section id="about">
         <SectionTitle title="About Us" />
         <p>
-          Imagine a team of frontend developers with the skills to tackle any
-          challenge and the experience to deliver results. That&apos;s us: CDR
-          Devs. We&apos;re a tight-knit team of three developers, united by our
-          experience in a rigorous software development bootcamp, eager to put
-          our knowledge to work for you.
+          CDR Devs are a team of three developers, united by our experience in a
+          rigorous software development bootcamp, eager to put our knowledge to
+          work for you.
         </p>
         <p>
           We&apos;re not just coders; we&apos;re problem solvers, collaborators,
