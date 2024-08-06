@@ -64,9 +64,7 @@
   cursor: pointer;
 }
 
-.github-icon path {
-  fill: aquamarine;
-}
+
 
 @media (min-width: 800px) {
 
