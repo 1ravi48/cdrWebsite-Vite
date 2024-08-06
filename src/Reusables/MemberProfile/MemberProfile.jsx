@@ -4,6 +4,7 @@ import LinkedIn from "../../assets/icons/linkedin-icon.svg";
 import GitHub from "../../assets/icons/github-icon.svg";
 import Insta from "../../assets/icons/insta-icon.svg";
 import Portfolio from "../../assets/icons/portfolio-icon.svg";
+import Twitter from "../../assets/icons/x-icon.svg";
 
 const MemberProfile = ({
   image,
@@ -14,6 +15,7 @@ const MemberProfile = ({
   github,
   instagram,
   portfolio,
+  twitter,
 }) => {
   return (
     <>
@@ -61,6 +63,15 @@ const MemberProfile = ({
                   />
                 </a>
               )}
+              {twitter && (
+                <a href={twitter} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={Twitter}
+                    alt="x"
+                    className={styles.teamMemberSocialIcon}
+                  />
+                </a>
+              )}
             </div>
           </div>
         </div>
@@ -78,6 +89,7 @@ MemberProfile.propTypes = {
   github: PropTypes.string,
   instagram: PropTypes.string,
   portfolio: PropTypes.string,
+  twitter: PropTypes.string,
 };
 
 export default MemberProfile;

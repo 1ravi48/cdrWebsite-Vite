@@ -18,9 +18,10 @@ const OurTeam = () => {
       name: "Catherine Sarquís",
       title: "Software Developer",
       description:
-        "Hej! Jeg er Catherine. I love languages (all kinds) and I enjoy transforming ideas into code. I'm excited to use my interests to make a difference by improving people's lives through technology.",
+        "Hej! Jeg er Catherine. I love languages (all kinds) and I enjoy transforming ideas into code. I'm excited to use my interests to make a difference by improving lives through technology.",
       linkedIn: "https://www.linkedin.com/in/sarquis",
       github: "https://github.com/csarq",
+      twitter: "https://x.com/catherineSrqs",
     },
     {
       image: davidImage,
@@ -61,6 +62,7 @@ const OurTeam = () => {
                   description={member.description}
                   linkedIn={member.linkedIn}
                   github={member.github}
+                  twitter={member.twitter}
                 />
               </SwiperSlide>
             ))}
