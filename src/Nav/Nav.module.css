@@ -5,10 +5,11 @@
   flex-direction: row;
   height: 8.9rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   background-color: white;
   padding-left: 8.4%;
   padding-right: 8.4%;
+  z-index: 1000;
 }
 
 .logo {
@@ -20,6 +21,7 @@
   display: flex;
   width: 4rem;
   height: auto;
+  padding-bottom: 1.2rem;
 }
 
 .HamburgerIcon {
