@@ -34,3 +34,30 @@
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0 0 1.4rem 1.4rem;
 }
+
+@media (min-width: 800px) {
+  .cardContainer {
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    border-radius: 0 1.4rem 1.4rem 0;
+    padding: 3rem;
+    justify-content: center;
+  }
+
+  .imageContainer {
+    height: 20rem;
+    width: 35%;
+    border-radius: 1.4rem 0 0 1.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
