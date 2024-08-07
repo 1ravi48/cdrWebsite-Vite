@@ -42,6 +42,29 @@ export default function Nav() {
 
   return (
     <>
+      <nav className={styles.NavDesktop}>
+        <a href="#home">
+          <img src={logo} className={styles.logo}></img>
+        </a>
+
+        <ul className={styles.LinksDesktop}>
+          <li className={styles.ListItemDesktop}>
+            <a href="#home">Home</a>
+          </li>
+          <li className={styles.ListItemDesktop}>
+            <a href="#about">About Us</a>
+          </li>
+          <li className={styles.ListItemDesktop}>
+            <a href="#services">Our Services</a>
+          </li>
+          <li className={styles.ListItemDesktop}>
+            <a href="#team">Our Team</a>
+          </li>
+          <li className={styles.ListItemDesktop}>
+            <a href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
       <nav className={styles.NavContainer}>
         <a href="#home">
           <img src={logo} className={styles.logo}></img>
