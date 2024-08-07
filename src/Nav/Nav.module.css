@@ -82,7 +82,11 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+.NavDesktop {
+  display: none;
+}
+
+@media (min-width: 870px) {
   .NavContainer {
     display: none;
   }
@@ -95,7 +99,57 @@ a {
     height: 8.9rem;
     justify-content: space-between;
     align-items: flex-end;
-    /* Keep this as flex-end */
+    background-color: #6e80fc;
+    padding-left: 8.4%;
+    padding-right: 8.4%;
+    z-index: 1000;
+  }
+
+  .LinksDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-self: center;
+    gap: 5rem;
+    /* Change this to center */
+  }
+
+  .logo {
+    align-self: flex-end;
+    /* Ensure the logo is aligned to flex-end */
+  }
+
+  .ListItemDesktop {
+    font-size: 1.5rem;
+    font-weight: 650;
+  }
+
+  .ListItemDesktop a {
+    display: flex;
+    color: white;
+    white-space: nowrap;
+
+  }
+
+  .ListItemDesktop a:hover {
+    color: #57007b;
+  }
+}
+
+@media (min-width: 1100px) {
+  .NavContainer {
+    display: none;
+  }
+
+  .NavDesktop {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    height: 8.9rem;
+    justify-content: space-between;
+    align-items: flex-end;
     background-color: #6e80fc;
     padding-left: 8.4%;
     padding-right: 8.4%;
@@ -134,4 +188,5 @@ a {
   .ListItemDesktop a:hover {
     color: #57007b;
   }
+
 }
