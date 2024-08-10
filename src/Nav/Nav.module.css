@@ -1,40 +1,39 @@
 .NavContainer {
-  position: sticky;
-  top: 0;
   display: flex;
-  flex-direction: row;
-  height: 8rem;
-  justify-content: space-between;
-  align-items: flex-end;
-  background-color: white;
+  justify-content: center;
+  align-items: center;
   padding-left: 8.4%;
   padding-right: 8.4%;
+  position: sticky;
+  height: 9rem;
+  top: 0;
+  border-bottom: solid 0.2rem var(--lineColour);
+  background-color: white;
   z-index: 1000;
 }
 
 .MobContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
 }
 
 .logo {
   height: 6.5rem;
   width: auto;
-  padding-bottom: 1rem;
 }
 
 .HamburgerContainer {
   display: flex;
   width: auto;
   height: 5rem;
-  padding-bottom: 1rem;
+  align-self: center;
 }
 
 .HamburgerIcon {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .MenuLinks {
@@ -100,7 +99,6 @@ a {
   }
 
   .NavDesktop {
-
     position: sticky;
     top: 0;
     display: flex;
@@ -140,7 +138,6 @@ a {
     display: flex;
     color: var(--navy);
     white-space: nowrap;
-
   }
 
   .ListItemDesktop a:hover {
@@ -190,8 +187,6 @@ a {
   .ListItemDesktop {
     font-size: 2rem;
     font-weight: 650;
-
-
   }
 
   .ListItemDesktop a {
@@ -205,5 +200,4 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
 }
