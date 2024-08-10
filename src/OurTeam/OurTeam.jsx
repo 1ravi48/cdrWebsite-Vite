@@ -46,6 +46,8 @@ const OurTeam = () => {
         "Hi, I'm David. Driven by a passion to create, I've transitioned from music to tech. I'm dedicated to building software and web applications that push the boundaries of digital creativity.",
       linkedIn: "https://www.linkedin.com/in/davidadamsilva",
       github: "https://github.com/davidadam1323",
+      twitter: "https://x.com/davidadam1323",
+      portfolio: "https://das-dev-project.vercel.app/#home",
     },
     {
       image: raviImage,
