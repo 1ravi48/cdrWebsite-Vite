@@ -1,8 +1,7 @@
 import { useState } from "react";
 import styles from "./Nav.module.css";
 import logo from "../assets/images/logo.svg";
-import hamburgerIcon from "../assets/icons/hamburger.svg";
-import hamburgerCross from "../assets/icons/hamburger-cross.svg";
+import { Twirl as Hamburger } from "hamburger-react";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,16 +42,12 @@ export default function Nav() {
           <a href="#home">
             <img src={logo} className={styles.logo} alt="logo" />
           </a>
-          <div
-            className={styles.hamburgerToggle}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <img
-              className={styles.hamburgerIcon}
-              src={isOpen ? hamburgerCross : hamburgerIcon}
-              alt="hamburger-icon"
-            />
-          </div>
+          <Hamburger
+            toggled={isOpen}
+            toggle={setIsOpen}
+            size={75}
+            color="#3c417c"
+          />
 
           {isOpen && (
             <ul className={styles.mobileMenu}>
