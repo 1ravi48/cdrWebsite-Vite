@@ -1,4 +1,5 @@
-.NavContainer {
+/* General Styles */
+.mobileNav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +13,7 @@
   z-index: 1000;
 }
 
-.MobContainer {
+.mobileNavContent {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -24,19 +25,19 @@
   width: auto;
 }
 
-.HamburgerContainer {
+.hamburgerToggle {
   display: flex;
   width: auto;
   height: 5rem;
   align-self: center;
 }
 
-.HamburgerIcon {
+.hamburgerIcon {
   height: 100%;
   width: auto;
 }
 
-.MenuLinks {
+.mobileMenu {
   list-style-type: none;
   width: 45%;
   position: absolute;
@@ -47,8 +48,7 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.ListItemHover {
-  /* border: solid; */
+.mobileMenuItemHover {
   border-width: 0.1rem;
   text-align: center;
   padding: 1.7rem;
@@ -58,7 +58,7 @@
   font-weight: 700;
 }
 
-.ListItemNotHover {
+.mobileMenuItem {
   border-width: 0.1rem;
   text-align: center;
   padding: 1.7rem;
@@ -66,20 +66,20 @@
   color: black;
 }
 
-.ListItemHover:first-child {
+.mobileMenuItemHover:first-child {
   border-radius: 1.1rem 1.1rem 0 0;
 }
 
-.ListItemHover:last-child {
+.mobileMenuItemHover:last-child {
   border-radius: 0 0 1.1rem 1.1rem;
 }
 
-.NotHover {
+.link {
   text-decoration: none;
   color: black;
 }
 
-.Hover {
+.linkHover {
   text-decoration: none;
   color: white;
   font-weight: 700;
@@ -89,16 +89,17 @@ a {
   text-decoration: none;
 }
 
-.NavDesktop {
+/* Desktop Navigation Styles */
+.desktopNav {
   display: none;
 }
 
 @media (min-width: 870px) {
-  .NavContainer {
+  .mobileNav {
     display: none;
   }
 
-  .NavDesktop {
+  .desktopNav {
     position: sticky;
     top: 0;
     display: flex;
@@ -108,39 +109,36 @@ a {
     align-items: flex-end;
     background-color: var(--lightBlueGrey);
     border-bottom: solid 0.2rem var(--lineColour);
-    /* box-shadow: 0px 4px 5px 2px rgba(225, 227, 230, 0.719); */
     padding-left: 8.4%;
     padding-right: 8.4%;
     z-index: 1000;
   }
 
-  .LinksDesktop {
+  .desktopMenu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
     align-self: center;
     gap: 3.5rem;
-    /* Change this to center */
   }
 
   .logo {
     align-self: flex-end;
-    /* Ensure the logo is aligned to flex-end */
   }
 
-  .ListItemDesktop {
+  .desktopMenuItem {
     font-size: 1.7rem;
     font-weight: 650;
   }
 
-  .ListItemDesktop a {
+  .desktopMenuItem a {
     display: flex;
     color: var(--navy);
     white-space: nowrap;
   }
 
-  .ListItemDesktop a:hover {
+  .desktopMenuItem a:hover {
     background: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;
@@ -149,11 +147,11 @@ a {
 }
 
 @media (min-width: 1100px) {
-  .NavContainer {
+  .mobileNav {
     display: none;
   }
 
-  .NavDesktop {
+  .desktopNav {
     color: black;
     position: sticky;
     top: 0;
@@ -169,32 +167,30 @@ a {
     z-index: 1000;
   }
 
-  .LinksDesktop {
+  .desktopMenu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
     align-self: center;
     gap: 5rem;
-    /* Change this to center */
   }
 
   .logo {
     align-self: flex-end;
-    /* Ensure the logo is aligned to flex-end */
   }
 
-  .ListItemDesktop {
+  .desktopMenuItem {
     font-size: 2rem;
     font-weight: 650;
   }
 
-  .ListItemDesktop a {
+  .desktopMenuItem a {
     display: flex;
     white-space: nowrap;
   }
 
-  .ListItemDesktop a:hover {
+  .desktopMenuItem a:hover {
     background: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;

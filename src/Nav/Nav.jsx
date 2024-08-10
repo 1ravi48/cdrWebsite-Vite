@@ -1,176 +1,85 @@
+import { useState } from "react";
 import styles from "./Nav.module.css";
 import logo from "../assets/images/logo.svg";
 import hamburgerIcon from "../assets/icons/hamburger.svg";
 import hamburgerCross from "../assets/icons/hamburger-cross.svg";
 
-/* eslint-disable no-unused-vars */
-import React, { useState } from "react";
-/* eslint-disable no-unused-vars */
-
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [homeHovering, setHomeHovering] = useState(false);
-  const [aboutHovering, setAboutHovering] = useState(false);
-  const [servicesHovering, setServicesHovering] = useState(false);
-  const [teamHovering, setTeamHovering] = useState(false);
-  const [contactHovering, setContactHovering] = useState(false);
+  const [hoveringItem, setHoveringItem] = useState(null);
 
-  function navHomeClick() {
+  const handleNavClick = () => {
     setIsOpen(false);
-    setHomeHovering(false);
-  }
+    setHoveringItem(null);
+  };
 
-  function navAboutClick() {
-    setIsOpen(false);
-    setAboutHovering(false);
-  }
-
-  function navServicesClick() {
-    setIsOpen(false);
-    setServicesHovering(false);
-  }
-
-  function navTeamClick() {
-    setIsOpen(false);
-    setTeamHovering(false);
-  }
-
-  function navContactClick() {
-    setIsOpen(false);
-    setContactHovering(false);
-  }
+  const menuItems = [
+    { name: "Home", href: "#home" },
+    { name: "About Us", href: "#about" },
+    { name: "Our Services", href: "#services" },
+    { name: "Our Team", href: "#team" },
+    { name: "Contact Us", href: "#contact" },
+  ];
 
   return (
     <>
-      <nav className={styles.NavDesktop}>
+      <nav className={styles.desktopNav}>
         <a href="#home">
-          <img src={logo} className={styles.logo}></img>
+          <img src={logo} className={styles.logo} alt="logo" />
         </a>
 
-        <ul className={styles.LinksDesktop}>
-          <li className={styles.ListItemDesktop}>
-            <a href="#home">Home</a>
-          </li>
-          <li className={styles.ListItemDesktop}>
-            <a href="#about">About Us</a>
-          </li>
-          <li className={styles.ListItemDesktop}>
-            <a href="#services">Our Services</a>
-          </li>
-          <li className={styles.ListItemDesktop}>
-            <a href="#team">Our Team</a>
-          </li>
-          <li className={styles.ListItemDesktop}>
-            <a href="#contact">Contact Us</a>
-          </li>
+        <ul className={styles.desktopMenu}>
+          {menuItems.map((item) => (
+            <li key={item.name} className={styles.desktopMenuItem}>
+              <a href={item.href}>{item.name}</a>
+            </li>
+          ))}
         </ul>
       </nav>
+
       {/* Mobile Nav */}
-      <nav className={styles.NavContainer}>
-        <div className={styles.MobContainer}>
+      <nav className={styles.mobileNav}>
+        <div className={styles.mobileNavContent}>
           <a href="#home">
-            <img src={logo} className={styles.logo}></img>
+            <img src={logo} className={styles.logo} alt="logo" />
           </a>
           <div
-            className={styles.HamburgerContainer}
+            className={styles.hamburgerToggle}
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? (
-              <img
-                className={styles.HamburgerIcon}
-                src={hamburgerCross}
-                alt="hamburger-icon"
-              />
-            ) : (
-              <img
-                className={styles.HamburgerIcon}
-                src={hamburgerIcon}
-                alt="hamburger-icon"
-              />
-            )}
+            <img
+              className={styles.hamburgerIcon}
+              src={isOpen ? hamburgerCross : hamburgerIcon}
+              alt="hamburger-icon"
+            />
           </div>
 
           {isOpen && (
-            <ul className={styles.MenuLinks}>
-              <li
-                className={
-                  homeHovering ? styles.ListItemHover : styles.ListItemNotHover
-                }
-              >
-                <a
-                  href="#home"
-                  className={homeHovering ? styles.Hover : styles.NotHover}
-                  onMouseEnter={() => setHomeHovering(true)}
-                  onMouseLeave={() => setHomeHovering(false)}
-                  onClick={navHomeClick}
+            <ul className={styles.mobileMenu}>
+              {menuItems.map((item) => (
+                <li
+                  key={item.name}
+                  className={
+                    hoveringItem === item.name
+                      ? styles.mobileMenuItemHover
+                      : styles.mobileMenuItem
+                  }
                 >
-                  Home
-                </a>
-              </li>
-              <li
-                className={
-                  aboutHovering ? styles.ListItemHover : styles.ListItemNotHover
-                }
-              >
-                <a
-                  href="#about"
-                  className={aboutHovering ? styles.Hover : styles.NotHover}
-                  onMouseEnter={() => setAboutHovering(true)}
-                  onMouseLeave={() => setAboutHovering(false)}
-                  onClick={navAboutClick}
-                >
-                  About Us
-                </a>
-              </li>
-              <li
-                className={
-                  servicesHovering
-                    ? styles.ListItemHover
-                    : styles.ListItemNotHover
-                }
-              >
-                <a
-                  href="#services"
-                  className={servicesHovering ? styles.Hover : styles.NotHover}
-                  onMouseEnter={() => setServicesHovering(true)}
-                  onMouseLeave={() => setServicesHovering(false)}
-                  onClick={navServicesClick}
-                >
-                  Our Services
-                </a>
-              </li>
-              <li
-                className={
-                  teamHovering ? styles.ListItemHover : styles.ListItemNotHover
-                }
-              >
-                <a
-                  href="#team"
-                  className={teamHovering ? styles.Hover : styles.NotHover}
-                  onMouseEnter={() => setTeamHovering(true)}
-                  onMouseLeave={() => setTeamHovering(false)}
-                  onClick={navTeamClick}
-                >
-                  Our Team
-                </a>
-              </li>
-              <li
-                className={
-                  contactHovering
-                    ? styles.ListItemHover
-                    : styles.ListItemNotHover
-                }
-              >
-                <a
-                  href="#contact"
-                  className={contactHovering ? styles.Hover : styles.NotHover}
-                  onMouseEnter={() => setContactHovering(true)}
-                  onMouseLeave={() => setContactHovering(false)}
-                  onClick={navContactClick}
-                >
-                  Contact Us
-                </a>
-              </li>
+                  <a
+                    href={item.href}
+                    className={
+                      hoveringItem === item.name
+                        ? styles.linkHover
+                        : styles.link
+                    }
+                    onMouseEnter={() => setHoveringItem(item.name)}
+                    onMouseLeave={() => setHoveringItem(null)}
+                    onClick={handleNavClick}
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           )}
         </div>
