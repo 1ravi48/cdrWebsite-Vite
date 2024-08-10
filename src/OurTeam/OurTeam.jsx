@@ -22,6 +22,7 @@ const OurTeam = () => {
       linkedIn: "https://www.linkedin.com/in/sarquis",
       github: "https://github.com/csarq",
       twitter: "https://x.com/catherineSrqs",
+      portfolio: "https://catherinesarquis.com",
     },
     {
       image: davidImage,
@@ -63,6 +64,7 @@ const OurTeam = () => {
                   linkedIn={member.linkedIn}
                   github={member.github}
                   twitter={member.twitter}
+                  portfolio={member.portfolio}
                 />
               </SwiperSlide>
             ))}
