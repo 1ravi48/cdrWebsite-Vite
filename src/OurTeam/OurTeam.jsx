@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styles from "./OurTeam.module.css";
 import SectionTitle from "../Reusables/SectionTitle/SectionTitle.jsx";
 import SemiCircle from "../Reusables/SemiCircle/SemiCircle.jsx";
@@ -9,9 +10,22 @@ import raviImage from "../assets/images/ravi-small.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/autoplay";
+import "swiper/css/navigation"; // Import Swiper navigation styles
+import { Pagination, Autoplay, Navigation } from "swiper/modules"; // Import Navigation module
 
 const OurTeam = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1100);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1100);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const teamMembers = [
     {
       image: catherineImage,
@@ -51,7 +65,13 @@ const OurTeam = () => {
         <div className={styles.OurTeamSectionContainer}>
           <Swiper
             pagination={{ clickable: true }}
-            modules={[Pagination]}
+            modules={[
+              Pagination,
+              Autoplay,
+              ...(isLargeScreen ? [Navigation] : []),
+            ]} // Conditionally add Navigation module
+            autoplay={{ delay: 7000 }}
+            navigation={isLargeScreen} // Conditionally enable navigation
             className={styles.teamSlider}
           >
             {teamMembers.map((member, index) => (
