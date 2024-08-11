@@ -19,10 +19,9 @@
   align-items: center;
   border-radius: 1.5rem;
   width: 85%;
-  height: 53rem;
+  height: 50rem;
   border: solid 0.2rem var(--lineColour);
   background-color: var(--lightBlueGrey);
-
 }
 
 .teamMemberImage {
@@ -50,11 +49,13 @@
 .teamMemberDescription {
   text-align: center;
   padding: 0rem 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .SocialsContainer {
   display: flex;
-  width: 75%;
+  height: 5rem;
+  width: 100%;
   padding: 0rem 2.5rem;
   justify-content: center;
   align-items: center;
@@ -63,8 +64,8 @@
 
 
 .teamMemberSocialIcon {
-  width: 28px;
-  height: 28px;
+  width: 38px;
+  height: 38px;
   cursor: pointer;
 }
 
