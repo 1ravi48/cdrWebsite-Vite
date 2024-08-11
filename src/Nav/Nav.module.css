@@ -33,7 +33,7 @@
   top: 8.7rem;
   border-radius: 1.1rem;
   background-color: white;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
 }
 
 .mobileMenuItemHover {
@@ -51,7 +51,8 @@
   text-align: center;
   padding: 1.7rem;
   font-size: 2rem;
-  color: black;
+  font-weight: bold;
+  color: var(--navy);
 }
 
 .mobileMenuItemHover:first-child {
@@ -60,21 +61,6 @@
 
 .mobileMenuItemHover:last-child {
   border-radius: 0 0 1.1rem 1.1rem;
-}
-
-.link {
-  text-decoration: none;
-  color: black;
-}
-
-.linkHover {
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* Desktop Navigation */
@@ -117,6 +103,7 @@ a {
   display: flex;
   color: var(--navy);
   white-space: nowrap;
+  text-decoration: none; /* Ensure text inside <a> looks like a link */
 }
 
 .desktopMenuItem a:hover {

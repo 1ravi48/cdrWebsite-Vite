@@ -7,7 +7,8 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [hoveringItem, setHoveringItem] = useState(null);
 
-  const handleNavClick = () => {
+  const handleNavClick = (href) => {
+    window.location.href = href; // Programmatically navigate to the href
     setIsOpen(false);
     setHoveringItem(null);
   };
@@ -69,20 +70,11 @@ export default function Nav() {
                       ? styles.mobileMenuItemHover
                       : styles.mobileMenuItem
                   }
+                  onMouseEnter={() => setHoveringItem(item.name)}
+                  onMouseLeave={() => setHoveringItem(null)}
+                  onClick={() => handleNavClick(item.href)}
                 >
-                  <a
-                    href={item.href}
-                    className={
-                      hoveringItem === item.name
-                        ? styles.linkHover
-                        : styles.link
-                    }
-                    onMouseEnter={() => setHoveringItem(item.name)}
-                    onMouseLeave={() => setHoveringItem(null)}
-                    onClick={handleNavClick}
-                  >
-                    {item.name}
-                  </a>
+                  {item.name}
                 </li>
               ))}
             </ul>
