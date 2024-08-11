@@ -13,8 +13,8 @@ function Contact() {
             <p>Ready to elevate your business?</p>
             <p>
               We are here to help! Reach out today to discuss how we can make
-              your online presence shine. We are excited to hear your ideas and
-              achieve your goals together!
+              your online presence shine. We&apos;re excited to hear your ideas
+              and achieve your goals together!
             </p>
             <img
               src={contactImage}
