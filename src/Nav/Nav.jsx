@@ -8,7 +8,7 @@ export default function Nav() {
   const [hoveringItem, setHoveringItem] = useState(null);
 
   const handleNavClick = (href) => {
-    window.location.href = href; // Programmatically navigate to the href
+    window.location.href = href;
     setIsOpen(false);
     setHoveringItem(null);
   };
@@ -60,25 +60,23 @@ export default function Nav() {
             color="#3c417c"
           />
 
-          {isOpen && (
-            <ul className={styles.mobileMenu}>
-              {mobMenuItems.map((item) => (
-                <li
-                  key={item.name}
-                  className={
-                    hoveringItem === item.name
-                      ? styles.mobileMenuItemHover
-                      : styles.mobileMenuItem
-                  }
-                  onMouseEnter={() => setHoveringItem(item.name)}
-                  onMouseLeave={() => setHoveringItem(null)}
-                  onClick={() => handleNavClick(item.href)}
-                >
-                  {item.name}
-                </li>
-              ))}
-            </ul>
-          )}
+          <ul className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
+            {mobMenuItems.map((item) => (
+              <li
+                key={item.name}
+                className={
+                  hoveringItem === item.name
+                    ? styles.mobileMenuItemHover
+                    : styles.mobileMenuItem
+                }
+                onMouseEnter={() => setHoveringItem(item.name)}
+                onMouseLeave={() => setHoveringItem(null)}
+                onClick={() => handleNavClick(item.href)}
+              >
+                {item.name}
+              </li>
+            ))}
+          </ul>
         </div>
       </nav>
     </>
