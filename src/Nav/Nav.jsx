@@ -53,6 +53,19 @@ export default function Nav() {
       </nav>
 
       {/* Mobile Nav */}
+      <nav className={styles.mobileNav}>
+        <div className={styles.mobileNavContent}>
+          <a href="#home">
+            <img src={logo} className={styles.logo} alt="logo" />
+          </a>
+          <Hamburger
+            toggled={isOpen}
+            toggle={setIsOpen}
+            size={75}
+            color="#3c417c"
+          />
+        </div>
+      </nav>
       <ul className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
         {mobMenuItems.map((item) => (
           <li
@@ -70,19 +83,6 @@ export default function Nav() {
           </li>
         ))}
       </ul>
-      <nav className={styles.mobileNav}>
-        <div className={styles.mobileNavContent}>
-          <a href="#home">
-            <img src={logo} className={styles.logo} alt="logo" />
-          </a>
-          <Hamburger
-            toggled={isOpen}
-            toggle={setIsOpen}
-            size={75}
-            color="#3c417c"
-          />
-        </div>
-      </nav>
     </>
   );
 }
