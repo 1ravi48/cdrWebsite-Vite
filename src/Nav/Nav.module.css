@@ -9,7 +9,7 @@
   height: 9rem;
   top: 0;
   border-bottom: solid 0.2rem var(--lineColour);
-  background-color: white;
+  background-color: var(--lightBlueGrey);
   z-index: 1000;
 }
 
@@ -26,14 +26,14 @@
 }
 
 .mobileMenu {
-  list-style-type: none;
   width: 45%;
-  position: absolute;
   right: 1rem;
   top: 10rem;
-  background-color: white;
+  position: fixed;
+  list-style-type: none;
   border-radius: 1.1rem;
   border: solid 0.1rem var(--lineColour);
+  background-color: var(--lightBlueGrey);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-130%);
   transition: transform 0.5s ease-in-out;
