@@ -12,11 +12,19 @@ export default function Nav() {
     setHoveringItem(null);
   };
 
-  const menuItems = [
+  const deskMenuItems = [
     { name: "Home", href: "#home" },
     { name: "About Us", href: "#about" },
     { name: "Our Services", href: "#services" },
     { name: "Our Team", href: "#team" },
+  ];
+
+  const mobMenuItems = [
+    { name: "Home", href: "#home" },
+    { name: "About Us", href: "#about" },
+    { name: "Our Services", href: "#services" },
+    { name: "Our Team", href: "#team" },
+    { name: "Contact Us", href: "#contact" },
   ];
 
   return (
@@ -27,7 +35,7 @@ export default function Nav() {
         </a>
 
         <ul className={styles.desktopMenu}>
-          {menuItems.map((item) => (
+          {deskMenuItems.map((item) => (
             <li key={item.name} className={styles.desktopMenuItem}>
               <a href={item.href}>{item.name}</a>
             </li>
@@ -53,7 +61,7 @@ export default function Nav() {
 
           {isOpen && (
             <ul className={styles.mobileMenu}>
-              {menuItems.map((item) => (
+              {mobMenuItems.map((item) => (
                 <li
                   key={item.name}
                   className={
