@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 60rem;
+
 }
 
 .teamMemberContent {
@@ -22,6 +23,7 @@
   height: 50rem;
   border: solid 0.2rem var(--lineColour);
   background-color: var(--lightBlueGrey);
+  box-shadow: 5px 5px 8px rgba(125, 125, 125, 0.2);
 }
 
 .teamMemberImage {

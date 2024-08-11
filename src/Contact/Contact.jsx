@@ -43,13 +43,12 @@ function Contact() {
                     <textarea name="message" id="message" required></textarea>
                   </div>
                 </div>
-                <div className={styles.formBtnContainer}>
-                  <input
-                    className={styles.submitBtn}
-                    type="submit"
-                    value="Submit"
-                  />
-                </div>
+
+                <input
+                  className={styles.submitBtn}
+                  type="submit"
+                  value="Submit"
+                />
               </form>
             </div>
           </div>

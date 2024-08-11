@@ -129,6 +129,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.2s ease;
+  box-shadow: 5px 5px 8px rgba(125, 125, 125, 0.2);
 }
 
 .contactBtn:hover {

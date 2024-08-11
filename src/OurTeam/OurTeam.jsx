@@ -34,7 +34,6 @@ const OurTeam = () => {
       description:
         "Hej! Jeg er Catherine. I love languages (all kinds) and I enjoy transforming ideas into code. I'm excited to use my interests to make a difference by improving lives through technology.",
       linkedIn: "https://www.linkedin.com/in/sarquis",
-      github: "https://github.com/csarq",
       twitter: "https://x.com/catherineSrqs",
       portfolio: "https://catherinesarquis.com",
     },
@@ -45,7 +44,6 @@ const OurTeam = () => {
       description:
         "Hi, I'm David. Driven by a passion to create, I've transitioned from music to tech. I'm dedicated to building software and web applications that push the boundaries of digital creativity.",
       linkedIn: "https://www.linkedin.com/in/davidadamsilva",
-      github: "https://github.com/davidadam1323",
       twitter: "https://x.com/davidadam1323",
       portfolio: "https://das-dev-project.vercel.app/#home",
     },
