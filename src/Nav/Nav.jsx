@@ -58,13 +58,13 @@ export default function Nav() {
           <a href="#home">
             <img src={logo} className={styles.logo} alt="logo" />
           </a>
-          <Hamburger
-            toggled={isOpen}
-            toggle={setIsOpen}
-            size={75}
-            color="#3c417c"
-          />
         </div>
+        <Hamburger
+          toggled={isOpen}
+          toggle={setIsOpen}
+          size={75}
+          color="#3c417c"
+        />
       </nav>
       <ul className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
         {mobMenuItems.map((item) => (
