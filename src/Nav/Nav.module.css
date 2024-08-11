@@ -145,6 +145,10 @@
     display: none;
   }
 
+  .mobileMenu {
+    display: none;
+  }
+
   .desktopNav {
     display: flex;
   }
