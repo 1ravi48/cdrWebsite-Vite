@@ -17,7 +17,6 @@ export default function Nav() {
     { name: "About Us", href: "#about" },
     { name: "Our Services", href: "#services" },
     { name: "Our Team", href: "#team" },
-    { name: "Contact Us", href: "#contact" },
   ];
 
   return (
@@ -33,6 +32,9 @@ export default function Nav() {
               <a href={item.href}>{item.name}</a>
             </li>
           ))}
+          <a href="#contact">
+            <button className={styles.contactBtn}>Contact Us</button>
+          </a>
         </ul>
       </nav>
 

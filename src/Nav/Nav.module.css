@@ -1,4 +1,4 @@
-/* General Styles */
+/* Mobile Navigation */
 .mobileNav {
   display: flex;
   justify-content: center;
@@ -22,18 +22,6 @@
 
 .logo {
   height: 6.5rem;
-  width: auto;
-}
-
-.hamburgerToggle {
-  display: flex;
-  width: auto;
-  height: 5rem;
-  align-self: center;
-}
-
-.hamburgerIcon {
-  height: 100%;
   width: auto;
 }
 
@@ -89,111 +77,88 @@ a {
   text-decoration: none;
 }
 
-/* Desktop Navigation Styles */
+/* Desktop Navigation */
 .desktopNav {
   display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8.4%;
+  padding-right: 8.4%;
+  height: 8.9rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--lightBlueGrey);
+  border-bottom: solid 0.2rem var(--lineColour);
+  z-index: 1000;
 }
 
-@media (min-width: 870px) {
-  .mobileNav {
-    display: none;
-  }
-
-  .desktopNav {
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    height: 8.9rem;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: var(--lightBlueGrey);
-    border-bottom: solid 0.2rem var(--lineColour);
-    padding-left: 8.4%;
-    padding-right: 8.4%;
-    z-index: 1000;
-  }
-
-  .desktopMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    align-self: center;
-    gap: 3.5rem;
-  }
-
-  .logo {
-    align-self: flex-end;
-  }
-
-  .desktopMenuItem {
-    font-size: 1.7rem;
-    font-weight: 650;
-  }
-
-  .desktopMenuItem a {
-    display: flex;
-    color: var(--navy);
-    white-space: nowrap;
-  }
-
-  .desktopMenuItem a:hover {
-    background: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.desktopMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 5rem;
 }
 
+.logo {
+  height: 6.5rem;
+  width: auto;
+  margin-right: auto;
+}
+
+.desktopMenuItem {
+  font-size: 2rem;
+  font-weight: 650;
+}
+
+.desktopMenuItem a {
+  display: flex;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
+.desktopMenuItem a:hover {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contactBtn {
+  position: relative;
+  width: 13.5rem;
+  height: 4.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--purple);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.contactBtn:hover {
+  opacity: 0.8;
+}
+
+.contactBtn:active {
+  transform: scale(1.05);
+}
+
+/* Media Query */
 @media (min-width: 1100px) {
   .mobileNav {
     display: none;
   }
 
   .desktopNav {
-    color: black;
-    position: sticky;
-    top: 0;
     display: flex;
-    flex-direction: row;
-    height: 8.9rem;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: var(--lightBlueGrey);
-    border-bottom: solid 0.2rem var(--lineColour);
-    padding-left: 8.4%;
-    padding-right: 8.4%;
-    z-index: 1000;
   }
 
   .desktopMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    align-self: center;
     gap: 5rem;
-  }
-
-  .logo {
-    align-self: flex-end;
-  }
-
-  .desktopMenuItem {
-    font-size: 2rem;
-    font-weight: 650;
-  }
-
-  .desktopMenuItem a {
-    display: flex;
-    white-space: nowrap;
-  }
-
-  .desktopMenuItem a:hover {
-    background: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
