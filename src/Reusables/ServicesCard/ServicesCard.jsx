@@ -1,27 +1,21 @@
 import PropTypes from "prop-types";
 import styles from "./ServicesCard.module.css";
 
-const ServicesCard = ({
-  image,
-  name,
-  subtitle,
-  description,
-  imgBg,
-  textBg,
-}) => {
+const ServicesCard = ({ image, name, subtitle, description }) => {
   return (
-    <div className={styles.cardContainer}>
-      <div className={styles.imageContainer} style={{ backgroundColor: imgBg }}>
-        <img src={image} alt={name} className={styles.servicesImage} />
+    <>
+      <div className={styles.cardContainer}>
+        <div className={styles.servicesCard}>
+          <img src={image} alt={name} className={styles.servicesImage} />
+          <div>
+            <p className={styles.descriptionText}>
+              <span className={styles.subtitle}>{subtitle}&nbsp;</span>
+              {description}
+            </p>
+          </div>
+        </div>
       </div>
-      <div
-        className={styles.descriptionContainer}
-        style={{ backgroundColor: textBg }}
-      >
-        <h3 className={styles.subtile}>{subtitle}</h3>
-        <p className={styles.descriptionText}>{description}</p>
-      </div>
-    </div>
+    </>
   );
 };
 
@@ -30,7 +24,6 @@ ServicesCard.propTypes = {
   name: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  imgBg: PropTypes.string,
   textBg: PropTypes.string,
 };
 

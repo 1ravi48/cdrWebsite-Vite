@@ -16,8 +16,6 @@ const OurServices = () => {
       subtitle: "Website Design:",
       description:
         "Enhancing your website's visual appeal by carefully selecting colours, fonts, layouts, and images that align with your brand and resonate with your customers.",
-      imgBg: "#5D6EE2",
-      textBg: "#F1F2FF",
     },
     {
       image: ResponsiveDesign,
@@ -25,17 +23,13 @@ const OurServices = () => {
       subtitle: "Responsive Design:",
       description:
         "Ensuring your website adapts seamlessly to various screen sizes, guaranteeing optimal viewing and functionality across phones, tablets, laptops, and desktops.",
-      imgBg: "#5CEDAC",
-      textBg: "#F0FFF7",
     },
     {
       image: InteractiveFeatures,
-      name: "Interactive Features",
+      name: "Int.Features",
       subtitle: "Interactive Features:",
       description:
         "Integrating engaging elements like animated menus, smooth scrolling, image sliders, and interactive forms to elevate user experience and captivate visitors.",
-      imgBg: "#E466C9",
-      textBg: "#FFF4F4",
     },
     {
       image: WebsiteRedesign,
@@ -43,14 +37,26 @@ const OurServices = () => {
       subtitle: "Website Redesign:",
       description:
         "Revitalising your existing website by revamping its visual aesthetics and functionality to attract new customers and enhance overall appeal.",
-      imgBg: "#FFC444",
-      textBg: "#FFFDCB",
     },
   ];
 
   return (
     <section id="services">
       <SectionTitle title="Our Services" />
+      <div className={styles.servicesTextContainer}>
+        <p>First impressions matter.</p>
+        <p>
+          Your website is your 24/7 brand ambassador. But we know that building
+          a captivating website from scratch can feel overwhelming, especially
+          when you&apos;re juggling everything else that comes with launching a
+          new business.
+        </p>
+        <p>That&apos;s where we come in.</p>
+        <p>
+          We&apos;re your partners in creating a powerful online presence that
+          reflects your unique brand and helps you achieve your goals.
+        </p>
+      </div>
       <div className={styles.servicesContainer}>
         {servicesProvided.map((service, index) => (
           <ServicesCard
@@ -59,8 +65,6 @@ const OurServices = () => {
             name={service.name}
             subtitle={service.subtitle}
             description={service.description}
-            imgBg={service.imgBg}
-            textBg={service.textBg}
           />
         ))}
       </div>
