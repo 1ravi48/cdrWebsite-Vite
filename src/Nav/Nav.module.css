@@ -32,27 +32,24 @@
   right: 1rem;
   top: 8.7rem;
   border-radius: 1.1rem;
+  border: solid 0.1rem var(--lineColour);
   background-color: white;
-  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobileMenuItem,
+.mobileMenuItemHover {
+  border-bottom: solid 0.1rem var(--lineColour);
+  text-align: center;
+  padding: 1.7rem;
+  font-size: 2rem;
+  color: var(--navy);
 }
 
 .mobileMenuItemHover {
-  border-width: 0.1rem;
-  text-align: center;
-  padding: 1.7rem;
-  font-size: 2rem;
-  color: white;
   background-color: var(--purple);
+  color: white;
   font-weight: 700;
-}
-
-.mobileMenuItem {
-  border-width: 0.1rem;
-  text-align: center;
-  padding: 1.7rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--navy);
 }
 
 .mobileMenuItemHover:first-child {
@@ -61,6 +58,11 @@
 
 .mobileMenuItemHover:last-child {
   border-radius: 0 0 1.1rem 1.1rem;
+}
+
+.mobileMenuItem:last-child,
+.mobileMenuItemHover:last-child {
+  border-bottom: none;
 }
 
 /* Desktop Navigation */
@@ -103,7 +105,7 @@
   display: flex;
   color: var(--navy);
   white-space: nowrap;
-  text-decoration: none; /* Ensure text inside <a> looks like a link */
+  text-decoration: none;
 }
 
 .desktopMenuItem a:hover {
