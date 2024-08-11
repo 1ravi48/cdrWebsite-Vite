@@ -21,7 +21,7 @@
   width: 85%;
   height: 53rem;
   border: solid 0.2rem var(--lineColour);
-  background-color: white;
+  background-color: var(--lightBlueGrey);
 
 }
 
@@ -88,6 +88,7 @@
     height: 29rem;
     align-items: center;
     justify-content: center;
+    background-color: var(--lightBlueGrey);
   }
 
   .teamMemberImage {
