@@ -8,8 +8,13 @@ export default function Nav() {
   const [hoveringItem, setHoveringItem] = useState(null);
 
   const handleNavClick = (href) => {
+    // Updates the window location to navigate to the given `href`,
     window.location.href = href;
+
+    // Close the mobile menu by setting `isOpen` to `false`,
     setIsOpen(false);
+
+    // Reset the hovering state to `null` to remove any highlighted menu item.
     setHoveringItem(null);
   };
 
