@@ -53,6 +53,23 @@ export default function Nav() {
       </nav>
 
       {/* Mobile Nav */}
+      <ul className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
+        {mobMenuItems.map((item) => (
+          <li
+            key={item.name}
+            className={
+              hoveringItem === item.name
+                ? styles.mobileMenuItemHover
+                : styles.mobileMenuItem
+            }
+            onMouseEnter={() => setHoveringItem(item.name)}
+            onMouseLeave={() => setHoveringItem(null)}
+            onClick={() => handleNavClick(item.href)}
+          >
+            {item.name}
+          </li>
+        ))}
+      </ul>
       <nav className={styles.mobileNav}>
         <div className={styles.mobileNavContent}>
           <a href="#home">
@@ -64,24 +81,6 @@ export default function Nav() {
             size={75}
             color="#3c417c"
           />
-
-          <ul className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
-            {mobMenuItems.map((item) => (
-              <li
-                key={item.name}
-                className={
-                  hoveringItem === item.name
-                    ? styles.mobileMenuItemHover
-                    : styles.mobileMenuItem
-                }
-                onMouseEnter={() => setHoveringItem(item.name)}
-                onMouseLeave={() => setHoveringItem(null)}
-                onClick={() => handleNavClick(item.href)}
-              >
-                {item.name}
-              </li>
-            ))}
-          </ul>
         </div>
       </nav>
     </>
