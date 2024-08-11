@@ -10,7 +10,7 @@
   width: 100%;
   border-radius: 0.5rem;
   background-color: var(--lightBlueGrey);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border: solid 0.2rem var(--lineColour);
 }
 
 form {
@@ -20,7 +20,7 @@ form {
   align-items: center;
 }
 
-.gradientBg {
+/* .gradientBg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,10 +28,10 @@ form {
   height: 4.7rem;
   border-radius: 0.5rem;
   background: var(--gradient);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
+ 
+} */
 
-.gradientBgText {
+/* .gradientBgText {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,13 +40,14 @@ form {
   border-radius: 0.5rem;
   background: var(--gradient);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 input,
 textarea {
   border: none;
   border-radius: 0.4rem;
   padding: 1rem;
+  border: solid 0.2rem var(--lineColour);
 }
 
 
@@ -78,16 +79,24 @@ textarea {
   font-family: noto-sans, sans-serif;
   padding: 19px 30px;
   font-size: 1.5rem;
-  background-color: #57007b;
+  /* background-color: #57007b; */
+  background: var(--gradient);
   color: white;
   font-weight: 800;
-  letter-spacing: 0.75px;
+  letter-spacing: 0.2rem;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
+
+
 
 .submitBtn:active {
   transform: translateY(2px);
+}
+
+#name {
+  padding-top: 2.5rem;
 }
 
 @media (min-width: 800px) {
