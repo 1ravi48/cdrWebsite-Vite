@@ -22,6 +22,8 @@
 }
 
 .footerLinks {
-  display: flex;
+  display: none;
+  /* Hide the footer links until we're up on Fiverr */
+  /* display: flex; */
   align-items: baseline;
 }
