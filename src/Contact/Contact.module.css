@@ -2,6 +2,11 @@
   display: none;
 }
 
+.SectionFormContainer {
+  margin-bottom: 3.1rem;
+  width: 100%;
+}
+
 .formContainer {
   display: flex;
   align-items: center;
@@ -19,30 +24,8 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  width: 100%;
 }
-
-/* .gradientBg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30.7rem;
-  height: 4.7rem;
-  border-radius: 0.5rem;
-  background: var(--gradient);
- 
-} */
-
-/* .gradientBgText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30.7rem;
-  height: 12.3rem;
-  border-radius: 0.5rem;
-  background: var(--gradient);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-} */
 
 input,
 textarea {
@@ -50,22 +33,31 @@ textarea {
   border-radius: 0.4rem;
   padding: 1rem;
   border: solid 0.2rem var(--lineColour);
+  width: 90%;
 }
 
-
+label {
+  align-self: flex-start;
+  margin-left: 5%;
+}
 
 .formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 1.3rem;
   font-size: 1.4rem;
+  width: 100%;
 }
 
 .formGroup input {
-  width: 30.5rem;
+
+  width: 90%;
   height: 4.5rem;
 }
 
 .formGroup textarea {
-  width: 30.5rem;
+  width: 90%;
   height: 12.1rem;
 }
 
@@ -73,9 +65,7 @@ textarea {
   padding: 1.9rem 0rem;
 }
 
-.SectionFormContainer {
-  margin-bottom: 3.1rem;
-}
+
 
 .submitBtn {
   width: 13.5rem;
@@ -167,6 +157,10 @@ textarea {
     font-size: 2rem;
     height: 4.2rem;
     margin-bottom: 5rem;
+  }
+
+  label {
+    margin-left: 0;
   }
 
 

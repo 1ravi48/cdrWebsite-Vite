@@ -27,21 +27,18 @@ function Contact() {
               <form action="https://formspree.io/f/xnnadpye" method="post">
                 <div className={styles.formGroup} id={styles.name}>
                   <label htmlFor="name">Name</label>
-                  <div className={styles.gradientBg}>
-                    <input type="text" name="name" id="name" required />
-                  </div>
+
+                  <input type="text" name="name" id="name" required />
                 </div>
                 <div className={styles.formGroup}>
                   <label htmlFor="email">Email</label>
-                  <div className={styles.gradientBg}>
-                    <input type="text" name="email" id="email" required />
-                  </div>
+
+                  <input type="text" name="email" id="email" required />
                 </div>
                 <div className={styles.formGroup}>
                   <label htmlFor="message">Message</label>
-                  <div className={styles.gradientBgText}>
-                    <textarea name="message" id="message" required></textarea>
-                  </div>
+
+                  <textarea name="message" id="message" required></textarea>
                 </div>
 
                 <input
